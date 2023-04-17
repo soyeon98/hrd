@@ -1,0 +1,11 @@
+
+
+// 컴파일러에 의해서 번역이 되면 바이너리파일 생성.class
+// C:\Users\Administrator\Documents\풀스텍과정_박소연\03월\0321_자바_시작하기\J01_시작하기1.java
+
+J01_시작하기1.java => 번역(자바 컴파일러) => J01_시작하기1.class
+
+javac J01_시작하기1.java
+
+결과  => 클래스 생성(바이너리 파일(Binary File))
+J01_시작하기1.class

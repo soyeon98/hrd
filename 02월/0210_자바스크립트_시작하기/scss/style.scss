@@ -1,0 +1,44 @@
+@import url(./reset.css);
+
+.slide-container{
+    width: 100%;
+    position: relative;
+    .slide-view{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        overflow: hidden;
+        .slide-wrap{
+            width: 100% * 4;
+            display: flex;
+            transition: all 1s;
+            .slide{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+  span{
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    z-index: 2;
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        margin: 0 20px;
+        background: #000;
+        padding: 10px 20px;
+        &:hover{
+            background: #333;
+        }
+    }
+  }  
+}

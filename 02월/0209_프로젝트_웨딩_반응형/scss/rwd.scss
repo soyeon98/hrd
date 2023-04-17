@@ -1,0 +1,162 @@
+@media all and (max-width:1170px) {
+    #wrap{
+        #main{
+          #section5{
+        padding: 11.1111vw 0;
+        .container{
+  
+            width: 1170px;
+
+            .gap{
+       
+                .title{
+                    padding: 0 0 6.837607vw 0;
+                    h2{
+                        font-size: 2.051282051vw;
+            
+                    }
+                }
+                .content{
+                 
+                  
+                    .gallery-box{
+                        width: 100vw + 0.940171vw;
+                        margin: 0 0 0 -0.940171vw;
+                        ul{
+                     
+                            li{
+                                width: calc(100% / 4) ; 
+                                .col-gap{
+             
+                                    margin: 0 0 0.940171vw 0.940171vw; 
+                                  
+                                    a{
+                                    
+                                        figure{
+                                     
+                                            img{
+                                            
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+          }
+        }
+    }
+}
+@media all and (max-width:600px) {
+    #wrap{
+        #main{
+            #section5{
+                padding: 11.1111vw 0;
+                .container{
+        
+                    width: 1170px;
+
+                    .gap{
+            
+                        .title{
+                            padding: 0 0 6.837607vw 0;
+                            h2{
+                                font-size: 2.051282051vw;
+                    
+                            }
+                        }
+                        .content{
+                        
+                        
+                            .gallery-box{
+                                width: 100vw + 0.940171vw;
+                                margin: 0 0 0 -0.940171vw;
+                                ul{
+                            
+                                    li{
+                                        width: calc(100% / 3) ; 
+                                        .col-gap{
+                    
+                                            margin: 0 0 0.940171vw 0.940171vw; 
+                                        
+                                            a{
+                                            
+                                                figure{
+                                            
+                                                    img{
+                                                    
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media all and (max-width:500px) {
+    #wrap{
+        #main{
+            #section5{
+                padding: 11.1111vw 0;
+                .container{
+        
+                    width: 1170px;
+
+                    .gap{
+            
+                        .title{
+                            padding: 0 0 6.837607vw 0;
+                            h2{
+                                font-size: 2.051282051vw;
+                    
+                            }
+                        }
+                        .content{
+                        
+                        
+                            .gallery-box{
+                                width: 100vw + 0.940171vw;
+                                margin: 0 0 0 -0.940171vw;
+                                ul{
+                            
+                                    li{
+                                        width: calc(100% / 2) ; 
+                                        .col-gap{
+                    
+                                            margin: 0 0 0.940171vw 0.940171vw; 
+                                        
+                                            a{
+                                            
+                                                figure{
+                                            
+                                                    img{
+                                                    
+
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

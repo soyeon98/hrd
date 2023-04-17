@@ -1,0 +1,48 @@
+#wrap {
+  width: 100%;
+}
+#wrap #confirmModal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+#wrap #confirmModal .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#wrap #confirmModal .wrap .container {
+  width: 360px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#wrap #confirmModal .wrap .container .title {
+  width: 100%;
+  padding: 40px 30px;
+}
+#wrap #confirmModal .wrap .container .title h1 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+#wrap #confirmModal .wrap .container .btn-box {
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+#wrap #confirmModal .wrap .container .btn-box button {
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: 0;
+  color: #5f0080;
+  cursor: pointer;
+}

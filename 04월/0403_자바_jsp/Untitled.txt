@@ -1,0 +1,50 @@
+
+
+JSP
+Java Server Page
+웹계발 자바코딩이 포함된 서버사이드 스크립트언어
+
+헤더코딩은 문서시작 위치에
+자바 : 페이지 디렉티브를 --- <%@ %>
+표기한다
+
+속성별 분류방식
+<%@ 
+    page 
+    language="java" 
+    contentType="text/html; charset=UTF-8" 
+    pageEncoding="UTF-8"
+%>
+
+한줄 코딩
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+페이지 실행은 톰켓(Tomcat)서버가 실행되어야한다.
+1.8(8버젼)
+8.5 9버전
+
+//1.서버 실행
+d: d드라이브로 이동
+cd 경로 복붙 bin 경로로 이동
+startup.bat 으로 실행
+
+// 2. 웹페이지 webapps안 ROOT폴더에 붙여넣기
+D:\학생방\박소연\web\apache-tomcat-9.0.73\webapps\ROOT
+
+
+포트는 기본이 localhost:8080 포트 사용
+포트는 기본이 127.0.0.1:8080 포트 사용
+포트는 기본이 192.168.40.28 포트 사용
+
+localhost:8080/폴더명/
+webapps/ROOT/웨딩
+localhost:8080/웨딩/
+
+localhost:8080/폴더명/
+
+시스템 => 정보 => 환경변수 => JAVA_HOME => 자바 8버전 경로
+
+header.jsp
+main.jsp
+footer.jsp
+go_top.jsp

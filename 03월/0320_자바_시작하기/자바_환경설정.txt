@@ -1,0 +1,16 @@
+
+환경설정
+-> java para검색 후 Java › Inlay Hints › Parameter Names: Enabled 설정 none으로 변경
+
+java runtimes 
+-> setting json에서 편집
+      {// 자바 JDK 8v
+        "name": "JavaSE-1.8",
+        "path": "C:\\Program Files\\java\\java-se-8u42-ri\\bin\\", 내 컴퓨터에서 경로 복사해서 붙여넣기
+        "default": true
+      },
+      {//자바 JDK 11v
+      "name": "JavaSE-11",
+      "path": "C:\\Program Files\\java\\jdk-11\\bin\\",
+      "default": false
+      }

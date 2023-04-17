@@ -1,0 +1,20 @@
+comonent 설계
+
+public(정적 요소)
+    css
+    img
+    js
+    scss
+    index.html => DOM 컨테이너 id root
+    popup.html
+
+src (동적 요소)
+    React
+    ReactDOM => 가상돔(DOM)
+    index.js
+        components폴더
+            WrapComponent.jsx
+                wrap폴더
+                    HeaderComponent.jsx
+                    MainComponent.jsx
+                    FooterComponent.jsx

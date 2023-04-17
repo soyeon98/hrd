@@ -1,0 +1,66 @@
+깃허브 로그인 상태
+
+새로운 리파지토리 생성
+
+
+git init
+
+git 환경설정(config) 준비하기
+깃허브 리파지토리 주소(오리진):https://github.com/soyeon98/brando_wedding.git
+git hub에 사용자 이름(아이디):soyeon98
+이메일:212psy@naver.com
+비밀번호:qkrthdus98^!
+
+환경설정 사용자.이름
+git config user.name 'soyeon98'
+git config user.email '212psy@naver.com'
+
+원격자(remote)에 깃 주소 추가하기
+https://github.com/soyeon98/brando_agency1.git https://github.com/soyeon98/brando_wedding.git
+git remote add origin https://github.com/soyeon98/wedding.git
+
+추가된 주소 확인하기
+git remote -v
+
+다른 주소를 사용하고자 할 때나 삭제 하려고 할 때
+원격자(remote)에 깃 주소 삭제하기
+git remote remove origin
+
+스테이징 - 업로드(push)할 포트폴리오를 모두 무대에 올린다.
+git add .
+
+커밋하기 - commit -m '브란도 웨딩웹포트폴리오'
+git commit -m '브란도 웨딩웹포트폴리오'
+
+푸쉬하기 - push origin master
+git push origin master
+
+깃허브에 브라우져에서 본인의 리파지토리 화면에서 새로고침한다.
+그러면 소스가 보임.-포트폴리오
+
+페이징(배포) -> 깃허브 브라우져에서 셋팅 클릭 -> 좌측화면에 pages 클릭 
+   -> 우측화면에 branch를 none을 master로 설정 -> save 클릭 -> 1분 이상 대기 후 새로고침한다
+   -> 상단에 배포주소 url이 뜬다. -> visit 클릭 시 웹페이지 들어가짐.
+   
+   	qkrthdus98.dothome.co.kr/myadmin
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+깃허브복제하기/클론하기(clone)
+git clone https://soyeon98.github.io/brando_agency
+
+
+https://soyeon98.github.io/brando_agency/
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    디버깅
+    패치: 깃허브 저장소(리파지토리) 오리진 마스터에서 가져오기
+
+    git fetch origin master
+
+    풀:수정 삭제 추가 파일 확인 내용 있다면 로컬영역 현재 수정한 작업영역
+    내용을 깃허브 리파지토리 내용과 병합(mergy)
+
+    git pull origin master 

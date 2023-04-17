@@ -1,0 +1,170 @@
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./skip.css');
+
+#wrap{
+    width: 100%;
+    #msgForm{
+        width: 100%;
+        padding: 130px 0;
+        .container{
+            width: 100%;
+            max-width: 1170px;
+            margin: 0 auto;
+            .gap{
+                width: 100%;
+                .title{
+                    width: 100%;
+                    text-align: center;
+                    h2{
+                        font-size: 28px;
+                        color: #614c45;
+                        font-weight: 600;
+                  
+                    }
+                    span{
+                        width: 100%;
+                        display: block;
+                        padding: 10px 0 0 0;
+                        img{width: auto;}
+                    }
+                }
+                .content{
+                    width: 100%;
+                    display: flex;
+                    padding: 90px 0 0 0;
+                    .left{ 
+                        width:517.5px;
+                        .col-gap{
+                            width: 100%;
+                            padding: 0 15px;
+                            ul{
+                                width: 100%;
+                                li{
+                                    position: relative;
+                                    width: 100%;
+                                    display: flex;
+                                    padding: 0 0 60px 90px;
+                            
+                                    i{
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        font-size: 40px;
+                                        color: #c8a64b;
+                                        margin: 0 45px 0 0;
+                                    }
+                                    div{
+                                        h3{
+                                            font-size: 15px;
+                                            color: #000;
+                                            font-weight: 700;
+                                            letter-spacing: 0.26px;
+                                        }
+                                        h4,h5{
+                                            font-size: 14px;
+                                            color: #626262;
+                                            font-family: 'Roboto';
+                                            letter-spacing: 0.26px;
+                                        }
+                                        h4{
+                                            padding: 8px 0;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right{
+                        width: 652.5px;
+                           .col-gap{
+                                width: 100%;
+                                padding: 0 15px;
+                                form{
+                                    ul{
+                                        li{
+                                            width: 100%;
+                                            padding: 0 0 20px 0;
+                                            input{
+                                                width: 100%;
+                                                height: 47px;
+                                                background: #fff;
+                                                color: #626262;
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                font-family: 'Montserrat';
+                                                border: 2px solid rgba(0,0,0,0.1);
+                                                border-radius: 3px;
+                                                padding: 0 15px;
+                                                outline: 2px solid transparent;
+                                                outline-offset: -1px;
+                                                transition: all 0.3s;
+                                                &:focus{
+                                                    outline: 2px solid #999;
+                                                }
+                                                
+                                            }
+                                            select{
+                                                width: 100%;
+                                                height: 47px;
+                                                background: #fff url(../img/select-arrow.png) no-repeat 96% 50%;
+                                                color: #626262;
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                font-family: 'Montserrat';
+                                                border: 2px solid rgba(0,0,0,0.1);
+                                                border-radius: 3px;
+                                                padding: 0 15px;
+                                                color: #626262;
+                                                appearance: none;
+                                                &:focus{
+                                                    outline: 0;
+                                                }
+                                            }
+                                            textarea{
+                                                width: 100%;
+                                                height: 69px + 24px;
+                                                background: #fff;
+                                                border: 2px solid rgba(0,0,0,0.1);
+                                                border-radius: 3px;
+                                                resize: none;
+                                                padding: 15px;
+                                                color: #626262;
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                font-family: 'Montserrat';
+                                                outline: 2px solid transparent;
+                                                outline-offset: -1px;
+                                                transition: all 0.3s;
+                                                &:focus{
+                                                    outline: 2px solid #999;
+                                                }
+                                            }
+                                            button{
+                                                height: 18.5px+ 24px;
+                                                padding: 12px 15px;
+                                                background: #000;
+                                                color: #fff;
+                                                border: 2px solid #000;
+                                                border-radius: 3px;
+                                                transition: all 0.3s;
+                                                font-size: 13px;
+                                                font-weight: 600;
+                                                cursor: pointer;
+                                                &:hover{
+                                                    background: #fff;
+                                                    color: #000;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

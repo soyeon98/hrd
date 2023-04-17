@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+}
+#wrap #messageForm {
+  width: 100%;
+  padding: 130px 0;
+}
+#wrap #messageForm .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #messageForm .container .gap {
+  width: 100%;
+}
+#wrap #messageForm .container .gap .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 15px 100px 15px;
+}
+#wrap #messageForm .container .gap .title h2 {
+  font-size: 28px;
+  color: #614c45;
+  font-weight: 600;
+}
+#wrap #messageForm .container .gap .title span {
+  display: block;
+  padding: 10px 0 0 0;
+}
+#wrap #messageForm .container .gap .title span img {
+  width: 178px;
+}
+#wrap #messageForm .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#wrap #messageForm .container .gap .content .left {
+  width: 517.5px;
+}
+#wrap #messageForm .container .gap .content .left .col-gap {
+  width: 100%;
+  padding: 0 15px;
+}
+#wrap #messageForm .container .gap .content .left .col-gap ul {
+  width: 100%;
+}
+#wrap #messageForm .container .gap .content .left .col-gap ul li {
+  position: relative;
+  width: 100%;
+  padding: 0 0 60px 90px;
+  display: flex;
+}
+#wrap #messageForm .container .gap .content .left .col-gap ul li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+  color: #c8a64b;
+  margin: 0 45px 0 0;
+}
+#wrap #messageForm .container .gap .content .left .col-gap ul li div h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+}
+#wrap #messageForm .container .gap .content .left .col-gap ul li div h4,
+#wrap #messageForm .container .gap .content .left .col-gap ul li div h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #626262;
+  font-family: "Roboto";
+}
+#wrap #messageForm .container .gap .content .left .col-gap ul li div h4 {
+  padding: 7px 0;
+}
+#wrap #messageForm .container .gap .content .right {
+  width: 652.5px;
+}
+#wrap #messageForm .container .gap .content .right .col-gap {
+  width: 100%;
+  padding: 0 15px;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul {
+  width: 100%;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li {
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li input {
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  color: #626262;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0 15px;
+  outline: 2px solid transparent; /*투명*/
+  outline-offset: -1px;
+  transition: all 0.3s;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li input:focus {
+  outline: 2px solid #999;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li select {
+  width: 100%;
+  height: 48px;
+  color: #626262;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #fff url(../img/select-arrow.png) no-repeat 96% 50%;
+  background-size: auto;
+  padding: 0 15px;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li select:focus {
+  outline: 0;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li textarea {
+  width: 100%;
+  height: 90px;
+  color: #626262;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  padding: 15px;
+  resize: none;
+  outline: 2px solid transparent; /*투명*/
+  outline-offset: -1px;
+  transition: all 0.3s;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li textarea:focus {
+  outline: 2px solid #999;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li button {
+  height: 48px;
+  padding: 0 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 3px;
+  border: 2px solid #000;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#wrap #messageForm .container .gap .content .right .col-gap form ul li button:hover {
+  background: #fff;
+  color: #000;
+}

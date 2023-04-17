@@ -1,0 +1,37 @@
+#main {
+  width: 100%;
+  background: #fff;
+}
+#main #section1, #main #section2 {
+  width: 100;
+  padding: 120px 0;
+}
+#main #section1 .container, #main #section2 .container {
+  width: 100%;
+  max-width: 1430px;
+  margin: 0 auto;
+}
+#main #section1 .container .gap, #main #section2 .container .gap {
+  padding: 0 15px;
+}
+#main #section1 .container .gap .title, #main #section2 .container .gap .title {
+  padding: 0 0 50px 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+}
+#main #section1 .container .gap .content table, #main #section2 .container .gap .content table {
+  border-collapse: collapse;
+  width: 800px;
+  margin: 0 auto;
+}
+#main #section1 .container .gap .content table th, #main #section2 .container .gap .content table th {
+  border: 1px solid #ccc;
+  height: 48px;
+  background: #f0f0f0;
+  color: #000;
+}
+#main #section1 .container .gap .content table td, #main #section2 .container .gap .content table td {
+  border: 1px solid #ccc;
+  height: 40px;
+}

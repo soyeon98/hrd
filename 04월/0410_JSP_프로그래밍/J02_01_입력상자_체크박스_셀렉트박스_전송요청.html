@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관심있는 언어 과목 체크박스 요청페이지</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;vertical-align: middle;}
+        ul{list-style: none; display: flex; justify-content: space-between;}
+        form{width: 600px; margin: 130px auto; padding: 80px 30px;position: relative;background: #eee;}
+        form .title{text-align: center; padding: 0 0 30px 0;}
+        form .name-box{display: flex; padding: 30px 0;}
+        form .name-box label{display: flex; align-items: center;}
+        form .name-box h3{padding: 0 20px 0 0;}
+        form .name-box label input{width: 480px; height: 45px; background: #fff; border: 1px solid #ddd; padding: 0 15px; font-size: 15px;}
+        form .check-box{width: 100%;}
+        form .check-box label h3{width: 100%; padding: 0 0 15px 0;}
+        form .check-box ul li label{display: flex; justify-content: space-between; margin: 15px 0;}
+        form .check-box ul li label input{margin: 0 5px; width: 18px;}
+        form button{position: absolute; bottom: 10px;right: 30px; width: 150px; height: 50px; background: #fff; cursor: pointer; font-weight: 600;}
+
+    </style>
+</head>
+<body>
+
+    <!--
+
+        이름
+        관심있는 언어과목
+        입력 체크박스로 만들기
+        HTML5, CSS3, SASS, JS, JQUERY, REACT, JAVA, JSP 
+    -->
+    <div id="wrap">
+        
+        <form id="languagrForm" name="languagr_form" method="post" action="./J02_02_입력상자_체크박스_셀렉트박스_응답.jsp">
+            <div class="title"><h1>관심 언어 과목</h1></div>
+            <div class="name-box">
+                <label><h3>이름</h3></label>
+                <label><input type="text" id="name" name="name" class="user-name" placeholder="이름을 입력하세요" required autofocus></label>
+            </div>
+            <div class="check-box">
+                <label><h3>관심있는 언어과목</h3></label>
+                <ul>
+                    <li><label><input type="checkbox" name="lang" id="lang1" value="HTML5">HTML5</label></li>
+                    <li><label><input type="checkbox" name="lang" id="lang2" value="CSS3">CSS3</label></li>
+                    <li><label><input type="checkbox" name="lang" id="lang3" value="SASS">SASS</label></li>
+                    <li><label><input type="checkbox" name="lang" id="lang4" value="JS">JS</label></li>
+                    <li><label><input type="checkbox" name="lang" id="lang5" value="JQUERY">JQUERY</label></li>
+                    <li><label><input type="checkbox" name="lang" id="lang6" value="JAVA">JAVA</label></li>
+                    <li><label><input type="checkbox" name="lang" id="lang7" value="JSP">JSP</label></li>
+                </ul>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+
+    </div>
+</body>
+</html>

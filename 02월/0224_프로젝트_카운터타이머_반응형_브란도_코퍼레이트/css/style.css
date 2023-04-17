@@ -1,0 +1,57 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./skip.css");
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+  height: 100px;
+}
+#wrap #main {
+  width: 100%;
+}
+#wrap #main #sectionCount {
+  width: 100%;
+  padding: 130px 0;
+  background: #f0f0f0;
+}
+#wrap #main #sectionCount .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #sectionCount .container .gap {
+  width: 100%;
+}
+#wrap #main #sectionCount .container .gap .title {
+  text-align: center;
+}
+#wrap #main #sectionCount .container .gap .title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2283d4;
+}
+#wrap #main #sectionCount .container .gap .content {
+  width: 100%;
+}
+#wrap #main #sectionCount .container .gap .content ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #sectionCount .container .gap .content ul li {
+  width: 25%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #main #sectionCount .container .gap .content ul li span {
+  color: #000;
+  font-weight: 600;
+  font-size: 35px;
+}
+#wrap #foote {
+  width: 100%;
+  height: 300px;
+}

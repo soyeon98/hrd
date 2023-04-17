@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function f1(){
+            let a=100;
+            let b=200;
+            return console.log(`f1결과값 = ${a+b}`);
+
+        }
+        f1();
+
+        const f2=function(x,y){
+            return console.log(`f2결과값 =${x*y}`);
+        }
+
+        f2(7,67);
+
+        const f3=z=>z/100;
+        console.log('f3결과값 =',f3(52));
+
+        const f4=(x1,x2)=>(x1+x2)/2;
+        console.log('f4평균값 =',f4(98,75));
+
+        const obj1 ={과목:'수학',점수:87,등수:8}
+
+        const 성적=obj1=>{
+            const {과목,점수,등수} = obj1
+            console.log(과목);
+            console.log(점수);
+            console.log(등수);
+        }
+        성적(obj1);
+
+        const arr=['초콜릿','과자','젤리','사탕','음료수'];
+
+        const result = arr.map((item)=>item==='젤리');
+        console.log(result);
+        console.log(result.includes(true)?'젤리!!!!':'젤리.....');
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

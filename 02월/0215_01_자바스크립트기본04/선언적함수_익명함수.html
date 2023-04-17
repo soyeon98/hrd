@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>익명함수 이름없는 함수</title>
+</head>
+<body>
+    
+    <script>
+        '유즈 스트릭트';
+        'use strict';//엄격한 자바스크립트 모드
+        
+        //함수의 특징 1. 함수를 선언해서 만들고
+        //           2. 함수를 호출해야만 실행이된다.
+        //           3. 선언적 함수는 어디서나 호출 가능하고 익명함수는 선언문 아래에서만 호출이 가능하다.
+
+        //    func2();
+
+            function func2(){ //어디서나 호출 가능
+            let a=400;
+            let b=300;
+            return console.log(`선언적함수 리턴 값${a+b}`);
+        }
+
+        //익명함수 변수 = function(){} -선언문 위에서 호출 시 오류
+        const func1 =function(x,y){//매개변수2개
+            let a=x;
+            let b=y;
+            return console.log(`익명함수 리턴 값 ${a+b}`);
+        }
+
+        //익명함수는 실행 시 반드시 함수 선언 아래에서만 가능
+       // func1(78,99);//전달인자2개(아규먼트)
+       // func1(101,89);
+
+        // function 키워드는 함수의 기본 키워드
+        // 화살표함수(ES6 next) 익명함수 따라서 아래에서만 호출 가능 이벤트나 함수처리 속도가 빠름
+
+        // function fn() { 선언적 함수-밑의 수식처럼 화살표 함수로 바꿈
+
+        // }
+        // const fn=()=> {
+
+        // }
+
+        // const fn1 = ()=>{ 익명함수
+
+        // }
+        //즉시표현함수식 화살표함수
+        // (()=>{
+
+        // })();
+
+
+        //화살표함수 실행
+        const ham1 = (pa1,pa2) => {
+            console.log('ham1내부 파라미터값',pa1,pa2); //리턴이 필요없이 함수 안에서 바로 결과 출력
+        }
+        ham1(9,99);
+
+        //리턴결과
+
+        const ham2 = (pa) => {return pa+100;} //결과를 되돌려 받을때 리턴이 필요함.
+        console.log('함수밖에서 결과 출력',ham2(9));
+        
+        // 블록을 생략하고, 리턴문을 생략하여 한 줄로 표기 사용가능
+        const ham3 = (pa) => pa+100; //한줄 코딩 화살표 함수는 즉시 리턴이 이루어진다. 즉시 처리
+        
+        console.log('함수밖에서 결과 출력',ham3(9));
+
+        //파라미터가 한개인 경우 소괄호를 생략할 수 있다. 단, 파라미터가 두개 이상인 경우는 반드시 소괄호를 사용해야한다.
+        const ham4 = pa => pa+100;
+        console.log('함수밖에서 결과 출력',ham4(9));
+
+        //프로미스 비동기처리할 때는 반드시 화살표 함수 사용
+
+        //배열과 객체 그리고 함수
+        const obj1 ={상품코드:'PRODUCT0001',상품명:'딸기',가격:25000}
+        
+        const 상품=(obj1)=>{
+            console.log(obj1.상품코드);
+            console.log(obj1.상품명);
+            console.log(obj1.가격);
+        }
+        상품(obj1);
+
+        const 상품2=(obj1)=>{
+            const {상품코드,상품명,가격} = obj1 //비구조화 =>구조분할할당
+            console.log(상품코드);
+            console.log(상품명);
+            console.log(가격);
+        }
+        상품2(obj1);
+
+        const 상품3=({상품코드,상품명,가격})=>{
+            console.log('매개변수에서 비구조화',상품코드);
+            console.log('매개변수에서 비구조화',상품명);
+            console.log('매개변수에서 비구조화',가격);
+        }
+        상품3(obj1);
+
+        //화살표함수를 이용해 배열값 검색
+        const arr = ['이순신','김유신','김좌진','김두환'];
+
+        const result = arr.map((item)=>item==='김유신'); //중괄호를 빼면 즉시 리턴
+        console.log(result);
+         // 결과 result[false,true,false,false]
+        console.log(result.includes(true)?'김유신 찾았다':'김유신 없다');
+        //배열을 맵함수를 이용 김유신을 검색해 찾으면 true 아니면 false 를 반환
+        // 비교연산자 === >= <= > < !== 논라값 true 또는 false
+       
+        
+
+    </script>
+
+</body>
+</html>

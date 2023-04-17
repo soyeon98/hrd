@@ -1,0 +1,72 @@
+@media all and (max-width: 1170px) {
+  #wrap #main #section5 {
+    padding: 11.1111vw 0;
+  }
+  #wrap #main #section5 .container {
+    width: 1170px;
+  }
+  #wrap #main #section5 .container .gap .title {
+    padding: 0 0 6.837607vw 0;
+  }
+  #wrap #main #section5 .container .gap .title h2 {
+    font-size: 2.051282051vw;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box {
+    width: 100.940171vw;
+    margin: 0 0 0 -0.940171vw;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box ul li {
+    width: 25%;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap {
+    margin: 0 0 0.940171vw 0.940171vw;
+  }
+}
+@media all and (max-width: 600px) {
+  #wrap #main #section5 {
+    padding: 11.1111vw 0;
+  }
+  #wrap #main #section5 .container {
+    width: 1170px;
+  }
+  #wrap #main #section5 .container .gap .title {
+    padding: 0 0 6.837607vw 0;
+  }
+  #wrap #main #section5 .container .gap .title h2 {
+    font-size: 2.051282051vw;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box {
+    width: 100.940171vw;
+    margin: 0 0 0 -0.940171vw;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box ul li {
+    width: 33.3333333333%;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap {
+    margin: 0 0 0.940171vw 0.940171vw;
+  }
+}
+@media all and (max-width: 500px) {
+  #wrap #main #section5 {
+    padding: 11.1111vw 0;
+  }
+  #wrap #main #section5 .container {
+    width: 1170px;
+  }
+  #wrap #main #section5 .container .gap .title {
+    padding: 0 0 6.837607vw 0;
+  }
+  #wrap #main #section5 .container .gap .title h2 {
+    font-size: 2.051282051vw;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box {
+    width: 100.940171vw;
+    margin: 0 0 0 -0.940171vw;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box ul li {
+    width: 50%;
+  }
+  #wrap #main #section5 .container .gap .content .gallery-box ul li .col-gap {
+    margin: 0 0 0.940171vw 0.940171vw;
+  }
+}

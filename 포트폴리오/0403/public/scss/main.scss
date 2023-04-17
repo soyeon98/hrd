@@ -1,0 +1,1438 @@
+#wrap{
+    width: 100%;
+    #main{
+        width: 100%;
+        #section1{
+            width: 100%;
+            position: relative;
+            .container{
+                width: 100%;  
+                .gap{
+                    border-top: 1px solid #ddd;
+                    .top-box{
+                        display: flex;
+                        max-width: 1020px;
+                        margin: 0 auto;
+                        position: relative;              
+                        z-index: 2;
+                    
+                        .left-box{
+                            width: 170px;
+                            >ul{
+                                width: 100%;
+                                height: 493px;
+                                background: rgba(51,51,51,0.5);
+                                >li{
+                                    width:100%;
+                                    padding: 0 23px;
+                                    &:hover{
+                                        background: rgba(51,51,51,0.9);
+                                    }
+                                    &:first-child{
+                                        text-align: center;
+                                        border-left: 1px solid #ddd;
+                                        border-right: 1px solid #ddd;
+                                        height: 43px;
+                                        display: flex;
+                                        align-items: center;
+                                        background-color: #fff;
+                                        margin: 0 0 10px 0;
+                                        img.hambuger{
+                                            width: 20px;
+                                            margin: 0 8px 0 0;
+                                        }
+                                        >a{
+                                            font-size: 15px;
+                                            font-weight: 700;
+                                            color: #000;
+                                            text-align: left;
+                                        }
+                                    }                                 
+                                    &.sub-ca{
+                                        height: 29px;
+                                        display: flex;
+                                        align-items: center;
+                                       > a{
+                                        color: #fff;
+                                        font-size: 14px;
+                                        font-weight: 700;
+                                       }
+                                    }
+                                    &:last-child{
+                                        background-color: rgba(51,51,51,0.6);
+                                        height: 30px;
+                                        img.trophy{
+                                            width: 18px;
+                                        }
+                                    }
+                                    .trophy{
+                                        width: 18px;
+                                    }
+                                    >a{
+                                        width: 100%;
+                                        
+                                    }
+                                }                           
+                            }
+                        }
+                        .right-box{
+                            width: 850px;
+                            height: 44px;
+                            >ul{
+                                height: 100%;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                >li{
+                                    display: flex;
+                          
+                                    >a{
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        color: #000;
+                                        padding: 0 0 2px 0;                      
+                                        &:hover{
+                                            color: #f05a5e;
+                                            border-bottom: 2px solid #f05a5e;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom-box{
+                        width: 100%;
+                        height: 450px;
+                        position: absolute;
+                        z-index: 1;
+                        top: 44px;
+                        left: 0;
+                        .container1{
+                            width: 100%;
+                            height: 100%;
+                            .slide-container{
+                                width: 100%;
+                                height: 100%;
+                                .slide-view{
+                                    width: 100%;
+                                    height: 100%;
+                                    // overflow: hidden;
+                                    .slide-wrap{
+                                        width: 100%*12;
+                                        height: 100%;
+                                        display: flex;
+                                        .slide{
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            background: url() no-repeat 50% 50%;
+                                            background-size: cover;
+                                            border-top: 2px solid #000;
+                                             &.slide1{background-image: url(../img/6531928811023974793.jpg);z-index: 15;}
+                                             &.slide2{background-image: url(../img/3610331146117993572.jpg);z-index: 14;}
+                                             &.slide3{background-image: url(../img/5879912809975856395.jpg);z-index: 13;}
+                                             &.slide4{background-image: url(../img/6446838215598408257.jpg);z-index: 12;}
+                                             &.slide5{background-image: url(../img/683830113831519172.jpg);z-index: 11;}
+                                             &.slide6{background-image: url(../img/5202950148156657421.jpg);z-index: 10;}
+                                             &.slide7{background-image: url(../img/8675001664310972200.jpg);z-index: 9;}
+                                             &.slide8{background-image: url(../img/4421269711245221344.jpg);z-index: 8;}
+                                             &.slide9{background-image: url(../img/8060049117710843222.jpg);z-index: 7;}
+                                            &.slide10{background-image: url(../img/8096943894034051790.jpg);z-index: 6;}
+                                            &.slide11{background-image: url(../img/1467999931001845695.jpg);z-index: 5;}
+                                            &.slide12{background-image: url(../img/1467999931001845695.jpg);z-index: 4;}
+                                            &.slide13{background-image: url(../img/2645819503662441571.jpg);z-index: 3;}
+                                            &.slide14{background-image: url(../img/7475464517160475166.jpg);z-index: 2;}
+                                            &.slide15{background-image: url(../img/5497472059212400200.jpg);z-index: 1;}
+                                            .tit{
+                                                width: 1020px;
+                                                margin: 30px auto;
+                                                padding: 0 0 0 250px;
+                                                h3{
+                                                    font-size: 18px;
+                                                    font-weight: 700;
+                                                    color: #000;
+                                                }
+                                                h1{
+                                                    font-size: 48px;
+                                                    color: #1f1f1f;
+                                                    line-height: 120%;
+                                                }
+                                                p{}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #sectoin2{
+            width: 100%;
+            .container{
+                width: 100%;
+                max-width: 1020px;
+                margin: 0 auto;
+                .gap{
+                    padding: 50px 0;
+                    figure{
+                        display: flex;
+                        justify-content: space-between;
+                        img{
+                            width: 508px;
+                            height: 102px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        #section3{
+            width: 100%;
+            .container{
+                width: 100%;
+                max-width: 1020px;
+                margin: 0 auto;
+                display: flex;
+                .left-content{
+                    width: 50%;
+                    border-right: 1px solid #ddd;
+                    .gap{
+                        padding: 0 5px;
+                        .title{
+                            margin: 5px 0 20px 20px;
+                            display: flex;
+                            height: 63px;
+                            h1{
+                                width: 80%;
+                                font-size: 26px;
+                                color: #000;
+                                font-weight: 700;
+                                line-height: 120%;
+                                letter-spacing: -2px;
+                            }
+                            span{
+                                width: 20%;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: flex-end;
+                                font-size: 15px;
+                                color: #aaa;
+                                cursor: pointer;
+                                img{
+                                    width: auto;
+                                    transform: translateY(-2.5px);
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+                        .slide-container{
+                            width: 100%;
+                            .slide-view{
+                                width: 100%;
+                                .slide-wrap{
+                                    width: 100%;
+                                    position: relative;
+                                    .slide{
+                                        width: 100%;
+                                        display: flex;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        background: #fff;
+                                        .col{    
+                                            width: 50%;   
+                                            .img-box{
+                                                display: flex;
+                                                justify-content: center;
+                                                img{
+                                                    width: 215px;
+                                                    height: 215px;
+                                                }
+                                            }
+                                            .txt-box{
+                                                margin: 15px 0 0 20px;
+                                                h3{
+                                                    font-size: 14px;
+                                                    color: #000;
+                                                    line-height: 130%;
+                                                }
+                                                h5{
+                                                    display: flex;
+                                                    font-size: 20px;
+                                                    font-weight: 500;
+                                                    color: #e02020;
+                                                    padding: 8px 0;
+                                                    em{
+                                                        font-size: 14px;
+                                                        color: #777;
+                                                        text-decoration-line: line-through;
+                                                        padding: 0 5px 0 0;
+                                                    }
+                                                    >span{
+                                                        display: flex;                                                       
+                                                        align-items: center;
+                                                        >img{         
+                                                            display: block;                                              
+                                                            margin: 0 0 0 35px;                                                                                                            
+                                                        }
+                                                    }
+                                                }
+                                                p{
+                                                    width: 100%;
+                                                    height: 20px;
+                                                    >span{
+                                                        border-radius: 8px;
+                                                        font-size: 12px;
+                                                        color:#fff ;
+                                                        padding: 2px 6px;
+                                                        margin: 0 1px;
+                                                        &.sale{
+                                                            background: #f65c60;
+                                                        }
+                                                        &.coupon{
+                                                            background: #9bce26;
+                                                        }
+                                                        &.drim{
+                                                            background: #f374b7;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.slide1{
+                                            z-index: 4;
+                                        }
+                                        &.slide2{
+                                            z-index: 5;
+                                        }
+                                        &.slide3{
+                                            z-index: 3;
+                                        }
+                                        &.slide4{
+                                            z-index: 2;
+
+                                        }
+                                        &.slide5{
+                                            z-index: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .btn-box{
+                            display: flex;
+                            justify-content: center;
+                            margin: 360px 0 0 0;
+                            button{
+                                width: 335px;
+                                height: 40px;
+                                background: #fff;
+                                border: 1px solid #ddd;
+                                cursor: pointer;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                    
+                }
+                .right-content{
+                    width: 50%;
+                    .gap{
+                        padding: 0 5px;
+                        .title{
+                            margin: 5px 0 20px 20px;
+                            display: flex;
+                            height: 63px;
+                            h1{
+                                width: 80%;
+                                font-size: 26px;
+                                color: #000;
+                                font-weight: 700;
+                                line-height: 120%;
+                                letter-spacing: -2px;
+                            }
+                            span{
+                                width: 20%;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: flex-end;
+                                font-size: 15px;
+                                color: #aaa;
+                                cursor: pointer;
+                                img{
+                                    width: auto;
+                                    transform: translateY(-2.5px);
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+                        .slide-container{
+                            width: 100%;
+                            .slide-view{
+                                width: 100%;
+                                .slide-wrap{
+                                    width: 100%;
+                                    position: relative;
+                                    .slide{
+                                        width: 100%;
+                                        display: flex;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        background: #fff;
+                                        .col{    
+                                            width: 50%;   
+                                            .img-box{
+                                                display: flex;
+                                                justify-content: center;
+                                                img{
+                                                    width: 215px;
+                                                    height: 215px;
+                                                }
+                                            }
+                                            .txt-box{
+                                                margin: 15px 0 0 20px;
+                                                line-height: 130%;
+                                                h3{
+                                                    font-size: 14px;
+                                                    color: #000;
+                                                }
+                                                h5{
+                                                    display: flex;
+                                                    font-size: 20px;
+                                                    font-weight: 500;
+                                                    color: #e02020;
+                                                    padding: 8px 0;
+                                                    em{
+                                                        font-size: 14px;
+                                                        color: #777;
+                                                        text-decoration-line: line-through;
+                                                        padding: 0 5px 0 0;
+                                                    }
+                                                    >span{
+                                                        display: flex;                                                       
+                                                        align-items: center;
+                                                        >img{         
+                                                            display: block;                                              
+                                                            margin: 0 0 0 35px;                                                                                                            
+                                                        }
+                                                    }
+                                                }
+                                                p{
+                                                    width: 100%;
+                                                    height: 20px;
+                                                    >span{
+                                                        border-radius: 8px;
+                                                        font-size: 12px;
+                                                        color:#fff ;
+                                                        padding: 2px 6px;
+                                                        margin: 0 1px;
+                                                        &.sale{
+                                                            background: #f65c60;
+                                                        }
+                                                        &.coupon{
+                                                            background: #9bce26;
+                                                        }
+                                                        &.drim{
+                                                            background: #f374b7;
+                                                        }
+                                                        &.give{
+                                                            background: #6fcff7;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.slide1{
+                                            z-index: 5;
+                                        }
+                                        &.slide2{
+                                            z-index: 4;
+                                        }
+                                        &.slide3{
+                                            z-index: 3;
+                                        }
+                                        &.slide4{
+                                            z-index: 2;
+                                        }
+                                        &.slide5{
+                                            z-index: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .btn-box{
+                            display: flex;
+                            justify-content: center;
+                            margin: 360px 0 0 0;
+                            button{
+                                width: 335px;
+                                height: 40px;
+                                background: #fff;
+                                border: 1px solid #ddd;
+                                cursor: pointer;
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section4{
+            width: 100%;
+            .container{
+                width: 100%;
+                max-width: 1020px;
+                margin: 0 auto;
+                .gap{
+                    .title{
+                        padding: 50px 0 8px 0;
+                        text-align: center;
+                        h1{
+                            font-size: 26px;
+                            color: #000;
+                            font-weight: 700;
+                            line-height: 40px;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    .content{
+                        .col-gap{
+                            display: flex;
+                            justify-content: space-between;
+                            .left{
+                                width: 500px;
+                                padding: 77px 30px;
+                                background: url(../img/2601431595732354957.jpg) no-repeat 50% 50%;
+                                background-size: cover;
+                                cursor: pointer;
+                                h2{
+                                    font-size: 21px;
+                                    font-weight: 700;
+                                    color: #000;
+                                }
+                                p{
+                                    padding: 15px 0 0 0;
+                                    font-size: 16px;
+                                    color: #000;
+                                }
+                            }
+                            .right{
+                                width: 500px;
+                                padding: 77px 30px;
+                                background: url(../img/7469510304108534541.jfif) no-repeat 50% 50%;
+                                background-size: cover;
+                                cursor: pointer;
+                                h2{
+                                    font-size: 21px;
+                                    font-weight: 700;
+                                    color: #000;
+                                }
+                                p{
+                                    padding: 15px 0 0 0;
+                                    font-size: 16px;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section5{
+            width: 100%;
+            .container{
+                width: 100%;
+                max-width: 1020px;
+                margin: 0 auto;
+                .gap{
+                    width: 100%;
+                    .title{
+                        padding: 50px 0 30px 0;
+                        text-align: center;
+                       
+                        h1{
+                            font-size: 26px;
+                            color: #000;
+                            font-weight: 700;
+                            line-height: 40px;
+                            letter-spacing: -2.5px;
+                        }
+                    }
+                    .content{
+                        width: 100%;
+                        .col-gap{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                         
+                            .left{
+                                width: 50%;
+                                padding: 0 10px 0 0;
+                                border-right:1px solid #ddd ;
+                                .row1{
+                                    width: 500px;
+                                    height: 300px;
+                                    background: url(../img/9077164724477956998.jpg) no-repeat 50% 50%;
+                                    background-size: cover;
+                                    .ad-box{
+                                        padding: 100px 0 150px 30px;
+                                        h2{
+                                            font-size: 21px;
+                                            font-weight: 700;
+                                            color: #000;
+                                            line-height: 120%;
+                                        }
+                                        >p{
+                                            padding: 15px 0;
+                                            letter-spacing: -0.5px;
+                                            font-size: 16px;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                                .row2{
+                                    width: 95%;
+                                    display: flex;
+                                    margin: -41px auto 0 auto;
+                                    background: #fff;
+
+                                    .col{
+                                        width: 100%;
+                                        .img-box{
+                                            width: 100%;
+                                            padding: 15px 10px;
+                                            position: relative;
+                                            img{
+                                                position: relative;
+                                                z-index: 1;
+                                                width: 215px;
+                                                height: 215px;
+                                                display: block;
+           
+                                            }
+                                            &::after{
+                                                content: '';
+                                                position: absolute;
+                                                display: block;
+                                                z-index: 2;
+                                                right: 12px;
+                                                bottom: 10px;
+                                                width: 40px;
+                                                height: 40px;
+                                                
+                                                background: url(../img/ico_zzim.png) no-repeat 50% 50% #fff;
+                                         
+                                            }
+
+
+                                        }
+                                        .txt-box{
+                                            text-align: center;
+                                            h3{
+                                                font-size: 14px;
+                                                color: #777;
+                                                font-weight: 700;
+                                                padding: 5px 0;
+                                                letter-spacing: -2px;
+                                            }
+                                            h4{
+                                                font-size: 14px;
+                                                color: #000;
+                                            }
+                                            h5{
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                color: #e02020;
+                                                padding: 8px 0;
+                                                em{
+                                                    font-size: 14px;
+                                                    color: #777;
+                                                    text-decoration-line: line-through;
+                                                    padding: 0 5px 0 0;
+                                                }
+                                            }
+                                            p{
+                                                span{
+                                                    border-radius: 8px;
+                                                    font-size: 12px;
+                                                    color:#fff ;
+                                                    padding: 2px 6px;
+                                                    margin: 0 1px;
+                                                    &.coupon{
+                                                        background: #9bce26;
+                                                    }
+                                                    &.drim{
+                                                        background: #f374b7;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .right{
+                                width: 50%;
+                                margin: 0 0 0 10px;
+                                .row1{
+                                    width: 500px;
+                                    height: 300px;
+                                    background: url(../img/1083345246227465015.jpg) no-repeat 50% 50%;
+                                    background-size: cover;
+                                  
+                                    .ad-box{
+                                        padding: 100px 0 150px 30px;
+                                        h2{
+                                            font-size: 21px;
+                                            font-weight: 700;
+                                            color: #000;
+                                            line-height: 120%;
+                                        }
+                                        >p{
+                                            padding: 15px 0;
+                                            letter-spacing: -0.5px;
+                                            font-size: 16px;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                                .row2{
+                                    width: 95%;
+                                    display: flex;
+                                    margin: -41px auto 0 auto;
+                                    background: #fff;
+                                    .col{
+                                        .img-box{
+                                            padding: 15px 10px;
+                                            img{
+                                                width: 215px;
+                                                height: 215px;
+                                            }
+                                        }
+                                        .txt-box{
+                                            text-align: center;
+                                            h3{
+                                                font-size: 14px;
+                                                color: #777;
+                                                font-weight: 700;
+                                                padding: 5px 0;
+                                                letter-spacing: -2px;
+                                            }
+                                            h4{
+                                                font-size: 14px;
+                                                color: #000;
+                                                letter-spacing: -0.6px;
+                                            }
+                                            h5{
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                color: #e02020;
+                                                padding: 8px 0;
+                                                em{
+                                                    font-size: 14px;
+                                                    color: #777;
+                                                    text-decoration-line: line-through;
+                                                    padding: 0 5px 0 0;
+                                                }
+                                            }
+                                            p{
+                                                span{
+                                                    border-radius: 8px;
+                                                    font-size: 12px;
+                                                    color:#fff ;
+                                                    padding: 2px 6px;
+                                                    margin: 0 1px;
+                                                    &.sale{
+                                                        background: #f65c60;
+                                                    }
+                                                    &.coupon{
+                                                        background: #9bce26;
+                                                    }
+                                                    &.drim{
+                                                        background: #f374b7;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section6{
+            width: 100%;
+            .container{
+                width: 100%;
+                max-width: 1020px;
+                margin: 0 auto;
+                .gap{
+                    width: 100%;
+                    .title{
+                        padding: 50px 0 30px 0;
+                        text-align: center;
+                        h1{
+                            font-size: 26px;
+                            color: #000;
+                            font-weight: 700;
+                            line-height: 40px;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    .content{
+                        .col-gap{
+                            display: flex;
+                            justify-content: space-between;
+                            .left-box{
+                                .img-box{
+                                    img{
+                                        border-radius: 10px;
+                                    }
+                                  
+                                }
+                                .txt-box{
+                                    h3{
+                                        padding: 30px 0 15px 0;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        color: #000;
+                                        letter-spacing: -1px;
+                                    }
+                                    p{
+                                        font-size: 16px;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                            .right-box{
+                                .img-box{
+                                    img{
+                                        border-radius: 10px;
+                                    }
+                                  
+                                }
+                                .txt-box{
+                                    h3{
+                                        padding: 30px 0 15px 0;
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                        color: #000;
+                                        letter-spacing: -1px;
+                                    }
+                                    p{
+                                        font-size: 16px;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn-box{
+                        text-align: center;
+                        margin: 40px 0 20px 0;
+                        button{
+                            width: 335px;
+                            height: 40px;
+                            background: #fff;
+                            border: 1px solid #ddd;
+                            border-radius: 3px;
+                            font-size: 14px;
+                            color: #454c53;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        #section7{
+            width: 100%;
+            .container{
+                width: 100%;
+                position: relative;
+                max-width: 1020px;
+                margin: 0 auto;
+                .gap{
+                    .title{
+                        padding: 50px 0 10px 0;
+                        text-align: center;
+                        h1{
+                            font-size: 26px;
+                            color: #000;
+                            font-weight: 700;
+                            line-height: 40px;
+                            letter-spacing: -2px;
+                        }
+                    }
+                    .slide-container{
+                        width: 100%;
+                        .slide-view{
+                            width: 100%;
+                            overflow: hidden;
+                            .slide-wrap{
+                                width: 100%*4;
+                                display: flex;
+                                margin: 0 0 0 -100%;
+                                .slide{
+                                    width: 33.3333%;
+                                    height: 145px;
+                                    background: url() no-repeat 50% 50%;
+                                    background-size: cover;
+                                    margin: 0 5px;
+                                    border-radius: 5px;
+                                    display: flex;
+                                    align-items: center;
+                                    &.slide1{
+                                        background-image: url(../img/463384426504527391.jpg);
+                                    }
+                                    &.slide2{
+                                        background-image: url(../img/6058297855087560326.jpg);
+                                    }
+                                    &.slide3{
+                                        background-image: url(../img/4780014840210874788.jpg);
+                                    }
+                                    &.slide4{
+                                        background-image: url(../img/4424871605970204838.jpg);
+                                    }
+                                    &.slide5{
+                                        background-image: url(../img/998593818635898971.jpg);
+                                    }
+                                    &.slide6{
+                                        background-image: url(../img/7137880711503869322.jpg);
+                                    }
+                                    .txt{
+                                        padding: 0 15px;
+                                        h1{
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            color: #000;
+                                            line-height: 130%;
+                                        }
+                                        p{
+                                            font-size: 14px;
+                                            color: #000;
+                                            display: block;
+                                            padding: 10px 0 0 0;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                    .page-btn-box{
+                        position: absolute;
+                        top: 70px;
+                        right: 20px;          
+                        span{
+                            margin: 0 10px;
+                            a{
+                                font-size: 14px;
+                                color: #888;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #section9{
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            .container{
+                width: 100%;
+                position: relative;
+                max-width: 1020px;
+                margin: 0 auto;
+                .gap{
+                    .title{
+                        padding: 50px 0 30px 0;
+                        text-align: center;
+                        h1{
+                            font-size: 26px;
+                            color: #000;
+                            font-weight: 700;
+                            line-height: 40px;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    .slide-container{
+                        width: 100%;
+                        padding: 0 8px;
+                        .slide-view{
+                            width: 100%;
+                            overflow: hidden;
+                            .slide-wrap{
+                                width: 100%*3;
+                                height: 420px;
+                                display: flex;
+                                margin: 0 0 0 -100%;
+                                overflow: hidden;
+                                li{
+                                    width: 33.3333%; 
+                                    height: 100%;    
+                                    padding: 0 12px;                             
+                                    .col-gap{
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 23px;                      
+                                        overflow: hidden;
+                                        .slide{
+                                            height: 100%;
+                                            background: url() no-repeat 50% 50%;
+                                            background-size: cover;  
+                                            cursor: pointer;                                       
+                                            transition: all 0.5s;
+                                            &.slide1{
+                                                background-image: url(../img/282962595263453411.jpg);
+                                            }
+                                            &.slide2{
+                                                background-image: url(../img/5374017565665088929.jpg);
+                                            }
+                                            &.slide3{
+                                                background-image: url(../img/7202939177605449119.jpg);
+                                            }
+                                            &.slide4{
+                                                background-image: url(../img/4926104965328747346.jpg);
+                                            }
+                                            &:hover{
+                                                transform: scale(1.03);
+                                            }
+                                            .txt-box{
+                                                padding: 320px 0 0 20px;
+                                                h1{
+                                                    font-size: 20px;
+                                                    font-weight: 700;
+                                                    color: #fff;
+                                                    padding: 0 0 10px 0;
+                                                }
+                                                h3{
+                                                    font-size: 15px;
+                                                    font-weight: 700;
+                                                    color: #fff;
+                                                    line-height: 130%;
+                                                }
+                                            }
+                                        }
+                                    }
+      
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .arrow-next-btn{
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    right: -5%;
+                    width: 40px;
+                    height: 40px;
+                    margin: 40px 0 0 0 ;
+                    background: url(../img/ico_arrow40x40_2.png) no-repeat 100% 0%;
+                    &:hover{
+                        background: url(../img/ico_arrow40x40_2.png) no-repeat 100% 100%;
+                    }
+                }
+                
+                .arrow-prev-btn{
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    left: -5%;
+                    width: 40px;
+                    height: 40px;
+                    margin: 40px 0 0 0 ;
+                    background: url(../img/ico_arrow40x40_2.png) no-repeat 0% 0%;
+                    &:hover{
+                        background: url(../img/ico_arrow40x40_2.png) no-repeat 0% 100%;
+                    }
+                }
+                
+            }
+        }
+        #section10{
+            width: 100%;
+            .container{
+                width: 100%;
+                max-width: 1020px;
+                margin: 0 auto;
+                .gap{
+                    width: 100%;
+                    position: relative;
+                    z-index: 1;
+                    .title{
+                        padding: 50px 0 30px 0;
+                        text-align: center;
+                        h1{
+                            font-size: 26px;
+                            color: #000;
+                            font-weight: 700;
+                            line-height: 40px;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    .page-btn-box{
+                        width: 80%;
+                        margin: 0 auto 30px auto;
+                        ul{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            li{
+                                button{
+                                    border: 1px solid #dadde0;
+                                    padding: 6px 16px;
+                                    background: #fff;
+                                    color: #757d86;
+                                    border-radius: 20px;
+                                    font-size: 14px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    .slide-container{
+                        width: 100%;
+                        .slide-view{
+                            width: 100%;
+                            overflow: hidden;
+                            .slide-wrap{
+                                width: 100%*9;
+                                display: flex;
+                                .slide{
+                                    width: 100%;
+                                    .row1{
+                                        position: relative;
+                                        z-index: 1;
+                                        height: 300px;
+                                        background: url(../img/6408627635923601842.jpeg) no-repeat 50% 50%;
+                                        background-size: cover;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        div.tit{
+                                            position: relative;
+                                            z-index: 3;
+                                            h2{
+                                                font-size: 28px;
+                                                color: #fff;
+                                                font-weight: 700;
+                                                text-align: center;
+                                                letter-spacing: -1.8px;
+                                            }
+                                            p{
+                                                font-size: 14px;
+                                                color: #fff;
+                                                padding: 20px 0 0 0;
+                                                text-align: center;
+                                                display: flex;
+                                                align-items: center;
+                                                i{
+                                                    padding: 0 3px 0 0; 
+                                                    img{
+                                                        width: 16px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &::after{
+                                            content: "";
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            z-index: 2;
+                                            top: 0;
+                                            left: 0;
+                                            background: rgba(0,0,0,0.2);
+                                        }
+                                    }
+
+                                    .row2{
+                                        width: 100%;
+                                        display: flex;
+                                        padding: 40px 40px 0 40px;
+                                        .left{
+                                            width: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            .img-box{
+                                                margin: 0 15px 0 0;
+                                                img{
+                                                    width: 100px;
+                                                }
+                                            }
+                                            .txt-box{
+                                                
+                                                h3{
+                                                    font-size: 14px;
+                                                    color: #000;
+                                                }
+                                                h5{
+                                                    display: flex;
+                                                    font-size: 14px;
+                                                    font-weight: 500;
+                                                    color: #e02020;
+                                                    padding: 8px 0;
+                                                    em{
+                                                        font-size: 12px;
+                                                        color: #b5b5b5;
+                                                        text-decoration-line: line-through;
+                                                        padding: 0 5px 0 0;
+                                                    }
+                                                    >span{
+                                                        display: flex;                                                       
+                                                        align-items: center;
+                                                        >img{         
+                                                            display: block;                                              
+                                                            margin: 0 0 0 35px;                                                                                                            
+                                                        }
+                                                    }
+                                                }
+                                                p{
+                                                    width: 100%;
+                                                    height: 20px;
+                                                    >span{
+                                                        border-radius: 8px;
+                                                        font-size: 12px;
+                                                        color:#fff ;
+                                                        padding: 1px 6px;
+                                                        margin: 0 1px;
+                                                        &.sale{
+                                                            background: #f65c60;
+                                                        }
+                                                        &.coupon{
+                                                            background: #9bce26;
+                                                        }
+                                                        &.drim{
+                                                            background: #f374b7;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .right{
+                                            width: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            .img-box{
+                                                margin: 0 15px 0 0;
+                                                img{
+                                                    width: 100px;
+                                                }
+                                            }
+                                            .txt-box{
+                                                
+                                                h3{
+                                                    font-size: 14px;
+                                                    color: #000;
+                                                }
+                                                h5{
+                                                    display: flex;
+                                                    font-size: 14px;
+                                                    font-weight: 500;
+                                                    color: #e02020;
+                                                    padding: 8px 0;
+                                                    em{
+                                                        font-size: 12px;
+                                                        color: #b5b5b5;
+                                                        text-decoration-line: line-through;
+                                                        padding: 0 5px 0 0;
+                                                    }
+                                                    >span{
+                                                        display: flex;                                                       
+                                                        align-items: center;
+                                                        >img{         
+                                                            display: block;                                              
+                                                            margin: 0 0 0 35px;                                                                                                            
+                                                        }
+                                                    }
+                                                }
+                                                p{
+                                                    width: 100%;
+                                                    height: 20px;
+                                                    >span{
+                                                        border-radius: 8px;
+                                                        font-size: 12px;
+                                                        color:#fff ;
+                                                        padding: 1px 6px;
+                                                        margin: 0 1px;
+                                                        &.sale{
+                                                            background: #f65c60;
+                                                        }
+                                                        &.coupon{
+                                                            background: #9bce26;
+                                                        }
+                                                        &.drim{
+                                                            background: #f374b7;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .arrow-next-btn{
+                        position: absolute;
+                        z-index: 3;
+                        top: 50%;
+                        right: 3%;
+                        width: 35px;
+                        height: 35px;
+                        i{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            border-top: 1px solid #fff;
+                            border-right: 1px solid #fff;
+                            transform: rotate(45deg);
+                        }
+                    }
+                    .arrow-prev-btn{
+                        position: absolute;
+                        z-index: 3;
+                        top: 50%;
+                        left: 3%;
+                        width: 35px;
+                        height: 35px;
+                        i{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            border-top: 1px solid #fff;
+                            border-left: 1px solid #fff;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+        #section12{
+            width: 100%;
+            padding: 30px 0;
+            .container{
+                width: 100%;
+                max-width: 1020px;
+                margin: 0 auto;
+                border-top: 1px solid #000;
+                .gap{
+                    width: 100%;
+                    .content{
+                        width: 100%;
+                        display: flex;
+                        .lt-bx{
+                            width: 63%;                            
+                            .top{
+                                display: flex;
+                                padding: 23px 0 10px 0;
+                                border-bottom: 1px solid #ddd;
+                                >h3{
+                                    font-size: 18px;
+                                    color: #000;
+                                    font-weight: 700;
+                                }
+                                p{
+                                    font-size: 14px;
+                                    color: #666;
+                                }
+                                a{
+  
+                                    >img{}
+                                }
+                            }
+                            .bottom{
+                                display: flex;
+                                padding: 40px 0 0 0;
+                                .col1{
+                                    padding: 0 40px 0 0;
+                                    >h3{
+                                        font-size: 18px;
+                                        color: #000;
+                                        font-weight: 700;
+                                        line-height: 140%;
+                                    }
+                                }
+                                .col2{
+                                    padding: 0 70px 0 0;
+                                    ul{
+                                        li{
+                                            >p{
+                                                font-size: 14px;
+                                                color: #888;
+                                                font-weight: 600;
+                                            }
+                                            >img{
+                                                width: auto;
+                                                margin: 10px 0;
+                                            }
+                                        }
+                                    }
+                                }
+                                .col3{
+                                    h4{
+                                        font-size: 14px;
+                                        color: #000;
+                                        font-weight: 700;
+                                    }
+                                    >p{
+                                        font-size: 14px;
+                                        color: #888;
+                                        line-height: 140%;
+                                        padding: 10px 0 15px 0;
+                                    }
+                                    .btn-bx{
+                                       overflow: hidden;
+                                        button{
+                                            margin: 0 10px 0 0;
+                                            width: 140px;
+                                            height: 60px;
+                                            background: #aaa;
+                                            color: #fff;
+                                            font-size: 14px;
+                                            border: 0;
+                                            font-weight: 700;
+                                            cursor: pointer;
+                                            img{
+                                                  border: 0;
+                                                  margin: 0 5px 0 0;
+                                                    background-size:cover;
+                                                &.first{
+                                                    width: 22px;
+                                                    height: 27px;
+                                                    background: url(../img/ico_customer.png) no-repeat 0 0;
+                                                }
+                                                &.second{
+                                                    width: 25px;
+                                                    height: 23px;
+                                                    background: url(../img/ico_customer.png) no-repeat 50% 100%;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rt-bx{
+                            width: 37%;
+                            >img{
+                                margin: 10px 0 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

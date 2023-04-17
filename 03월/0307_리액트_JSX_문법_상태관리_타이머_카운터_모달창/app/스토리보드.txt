@@ -1,0 +1,15 @@
+스토리보드
+
+0. components폴더 생성
+1. WrapComponent.jsx 생성
+2. 상태관리만들기 3분 타이머 seconds 59, minutes 2, setId 0
+3. 상태관리만들기 열기, 닫기, 메시지 ModalComponent.jsx  생성 메시지 컨펌모달 - 함수 2개 isModal false
+4. SignUpComponent.jsx 생성 아이디 비밀번호 이름 [휴대폰번호, 인증번호받기] [인증번호입력, 인증번호 확인] - 입력상자
+
+components 폴더 생성
+     - WrapComponent.jsx 
+     wrap 폴더   
+        - SignUpComponent.jsx
+        sign_up 폴더
+            - ModalComponent.jsx
+            sub폴더 ...

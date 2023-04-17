@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적입력폼</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;vertical-align: middle;}
+        #wrap{width: 100%;max-width: 500px; margin: 100px auto;text-align: center;}
+        #wrap .title{width: 100%; padding: 0 0 30px 0; }
+        #wrap form{width: 100%;}
+        #wrap form table{width: 100%; border-collapse: collapse;}
+        #wrap form table td{border: 1px solid #ddd;height: 50px;background: #f0f0f0;}
+        #wrap form table th{border: 1px solid #ddd;height: 50px;}
+        #wrap form input{width: 100%;margin: 15px 0;border: 0;padding: 0 15px; text-align: center;}
+        #wrap form input:focus{outline: 0;}
+        #wrap form input[type=submit]{cursor: pointer;height: 50px; font-size: 16px; font-weight: 600;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+<!-- 
+        요청페이지 J01_01_국어_영어_수학_입력상자_요청페이지.html
+        응답페이지 J01_02_국어_영어_수학_입력상자.jsp
+        1.
+        form 전송방식 get 방식
+        입력상자 3개 국어 영어 수학
+        전송버튼 1개
+        2.
+        전송버튼 누르면 응답하는 jsp를 제작 구현 
+        3과목 점수 출력
+        총점, 평균 출력
+    -->
+        <div class="title"><h1>성적입력폼</h1></div>
+        <form  id="scoreForm" name="score_form" method="post" action="./J01_02_국어_영어_수학_입력상자.jsp">
+            <table>
+                <tr>
+                    <td>이름</td>
+                    <td>국어점수</td>
+                    <td>영어점수</td>
+                    <td>수학점수</td>
+                </tr>
+                <tr>
+                    <th><input type="text" id="userName" name="user_name" placeholder="" required autofocus></th>
+                    <th><input type="text" id="koreanScore" name="korean_score" placeholder="" required autofocus></th>
+                    <th><input type="text" id="englishScore" name="english_score" placeholder="" required autofocus></th>
+                    <th><input type="text" id="mathScore" name="math_score" placeholder="" required autofocus></th>
+                </tr>
+            </table>         
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+</body>
+</html>

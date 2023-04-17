@@ -1,0 +1,19 @@
+
+    화면설계
+        -서브페이지
+    
+    Sub1Compnent.jsx
+    Sub2Compnent.jsx
+    Sub3Compnent.jsx
+    Sub4Compnent.jsx
+
+    2칸
+    
+        좌측
+        width: 262.5
+        스티키 
+        스크롤바 디자인
+        메뉴 체크박스
+
+        우측
+        width 

@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url('./fonts.css');
+@import url('./reset.css');
+@import url('./skip.css');
+
+
+#wrap #header {
+    width: 100%;height: 76px;border-bottom: 1px solid rgba(255,255,255,0.1);
+    background: rgba(0,0,0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+
+#wrap #main {width: 100%;position: relative;z-index: 2;}
+/*섹션1234 공통 스타일*/
+#wrap #main .sec1234 {
+    width: 100%; height:100vh ;/*창높이 반응형 단위 100vh 100vw*/
+    background: url() no-repeat 50% 50% fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wrap #main .sec1234 h2 {font-size: 200px;color: rgba(0,255,151,0.5);font-weight: 600;}
+
+#wrap #main #section1 {background-image: url(../img/photography-img1.jpg);}
+#wrap #main #section2 {background-image: url(../img/photography-img2.jpg);}
+#wrap #main #section3 {background-image: url(../img/photography-img3.jpg);}
+#wrap #main #section3 h2{color:rgba(0,239,255,0.5);}
+#wrap #main #section4 {background-image: url(../img/photography-img4.jpg);}
+
+
+#wrap #footer {width:100%; height:100px;    position: relative;z-index: 1;}
+
+
+
+
+
+

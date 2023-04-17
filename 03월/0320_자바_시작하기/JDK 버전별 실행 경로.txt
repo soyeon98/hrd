@@ -1,0 +1,7 @@
+JDK 버전별 실행 경로
+
+JDK 8V
+C:\Program Files\java\java-se-8u42-ri\bin
+
+JDK 11V
+C:\Program Files\java\jdk-11\bin

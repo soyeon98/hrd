@@ -1,0 +1,32 @@
+
+정적 파일
+    public, css, fonts, img, jsx, scss, index.html
+
+    index.html ==> root 돔컨테이너
+
+동적 파일
+src 안에 폴더 컴포넌트관리
+
+모듈관리(컴포넌트 파일관리 .jsx) 설계
+
+src + 
+폴더 components
+    WrapComponent.jsx
+        폴더 wrap
+            SkipComponent.jsx
+            HeaderComponent.jsx
+            MainComponent.jsx
+                폴더 main
+                    Section01Component.jsx
+                    Section02Component.jsx
+                    Section03Component.jsx
+                    Section04Component.jsx
+                    Section05Component.jsx
+                    Section06Component.jsx
+                    Section07Component.jsx
+                    Section08Component.jsx
+                    Section09Component.jsx
+                    Section10Component.jsx
+                    Section11Component.jsx
+            FooterComponent.jsx
+            GoTopComponent.jsx

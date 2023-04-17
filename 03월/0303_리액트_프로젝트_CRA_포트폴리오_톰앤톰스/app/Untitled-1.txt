@@ -1,0 +1,16 @@
+
+components 폴더
+    WrapComponent.jsx
+        wrap 폴더
+            HeaderComponent.jsx
+            MainComponent.jsx
+                main 폴더
+                    Section1Component.jsx
+                    Section2Component.jsx
+                    Section3Component.jsx
+                    Section4Component.jsx
+                    Section5Component.jsx
+                    Section6Component.jsx
+            FooterComponent.jsx
+            ChatBoxComponent.jsx
+            GoTopComponent.jsx

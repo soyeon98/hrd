@@ -1,0 +1,41 @@
+#main{
+    width: 100%;
+    background: #fff;
+    #section1,#section2{
+        width: 100;
+        padding: 120px 0;
+        .container{
+            width: 100%;
+            max-width: 1430px;
+            margin: 0 auto;
+            .gap{
+                padding: 0 15px;
+                .title{
+                    padding: 0 0 50px 0;
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: #000;
+                }
+                .content{            
+                    table{
+                        border-collapse: collapse;
+                        width: 800px;
+                        margin: 0 auto;               
+                        th{
+                            border: 1px solid #ccc;
+                            height: 48px;
+                            background: #f0f0f0;
+                            color: #000;
+
+                        }                                                                          
+                        td{
+                            border: 1px solid #ccc;
+                            height: 40px;
+
+                        }
+                    }                                                                     
+                }
+            }
+        }
+    }
+}
