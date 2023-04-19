@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행열값 전송 폼</title>
+    <style>
+        form{width: 640px; margin: 100px  auto;}
+        form table{width: 100%; border-collapse: collapse;}
+        form table caption{ width: 100%; text-align: center; font-size: 24px; font-weight: 600; padding: 0 0 20px 0;}
+        form table th{ border: 1px solid #333;height: 30px; background: #f0f0f0;}
+        form table td{ border: 1px solid #333;height: 30px;}
+        form table td input{ width: 98%; border: 0;outline: 0; text-align: center; font-size: 16px; font-weight: 500;}
+        form button{width: 100px; height: 40px; background: #fff; margin: 10px auto; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <form action="./J01_02_행열값_응답폼.jsp" id="rowCol" name="rowCol" method="post">
+            <table>
+                <caption>행열값 입력</caption>
+                <tr>
+                    <th>행</th>
+                    <th>열</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="row" id="row"  required autofocus></td>
+                    <td><input type="text" name="col" id="col"  required autofocus></td>
+                </tr>
+            </table>
+            <button type="submit">SUBMIT</button>
+        </form>
+
+    </div>
+</body>
+</html>

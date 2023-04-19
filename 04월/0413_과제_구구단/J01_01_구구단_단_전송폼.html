@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단 단 전송 폼</title>
+    <style>
+        form{width: 640px; margin: 100px  auto;}
+        form table{width: 100%; border-collapse: collapse; margin: 0 0 30px 0;}
+        form table caption{ width: 100%; text-align: center; font-size: 24px; font-weight: 600; padding: 0 0 5px 0;}
+        form table caption p{ width: 100%; text-align: right; font-size: 14px;  padding:5px 0 0 0;margin: 0; color: #e00;}
+        form table th{ border: 1px solid #333;height: 30px; background: #f0f0f0;}
+        form table td{ border: 1px solid #333;height: 30px; }
+        form table td input{ width: 98%; border: 0;outline: 0; text-align: center; font-size: 16px; font-weight: 500;}
+        form button{width: 100px; height: 40px; background: #fff; margin: 10px auto; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <form action="./J01_02_구구단_단_응답폼.jsp" id="gugudan" name="gugudan" method="post">
+            <table>
+                <caption>구구단 단 입력
+                    <p>* 2부터 9 사이의 수를 입력하세요</p>
+                    <p>* 종료단은 시작단보다 큰 수를 입력하세요</p>
+                </caption>
+                <tr>
+                    <th>시작 단</th>
+                    <th>종료 단</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="s_dan" id="Sdan"  required autofocus></td>
+                    <td><input type="text" name="e_dan" id="Edan"  required autofocus></td>
+                </tr>
+            </table>
+            <button type="submit">SUBMIT</button>
+        </form>
+
+    </div>
+</body>
+</html>

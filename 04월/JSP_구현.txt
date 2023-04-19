@@ -1,0 +1,24 @@
+<%@
+    page
+    language="java"
+    contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"
+%>
+
+<% 
+    // 폼 전송 받은 힌글깨짐현상 셋팅 인코딩
+    request.setCharacterEncoding("UTF-8");    
+%>
+
+
+스크립트 요소의 정리
+
+JSP 페이지에서는
+선언문(Declaration)  :  <%! %> 전역변수 선언 메서드 선언
+스크립트릿(scriptlet) : <% %>  지역변수 선언 
+표현식(Expression)   : <%= %>
+
+localhost:8080/jsp/0410_과제_마켓컬리_폼전송/J01_01_과제.jsp
+localhost:8080/jsp/0419_JSP_프로그래밍
+127.0.0.1:8080/jsp/0417_JSP_프로그래밍/J01_쿠키설정.jsp
+192.168.40.28:8080/jsp/0419_JSP_프로그래밍

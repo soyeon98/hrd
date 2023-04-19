@@ -1,0 +1,143 @@
+
+
+212qkrthdus.dothome.co.kr/myadmin
+
+관게형 데이터베이스
+SQL(Structure Query Language) 구조적 질의어 언어
+
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (0.01 sec)
+
+mysql> create database user;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| user               |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql>
+
+
+
+mysql> create database qkrthdus98;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| qkrthdus98         |
+| sakila             |
+| sys                |
+| user               |
+| world              |
++--------------------+
+8 rows in set (0.00 sec)
+
+mysql>
+
+데이터베이스 명(이름) user 안에 테이블 만들기
+사용을 허락받는 명령어 use user; - 입력
+
+Database changed
+
+이동한 user 데이터베이스안에 모든 테이블을 보이게하는 명령어 
+show tables; - 입력
+
+Empty set (0.01 sec) - 방금 만들어서 비어있음
+
+user 데이터베이스안에 signin 테이블 만들기
+signin 테이블 설계
+
+필드명(Field)      타입 
+user_id       가변형 문자열(VARCHAR(16))
+user_pw       가변형 문자열(VARCHAR(16))
+
+테이블 만들기
+CREATE TABLE signin(
+    user_id VARCHAR(16),
+    user_pw VARCHAR(16)
+); - 입력
+
+mysql> show tables;
++----------------+
+| Tables_in_user |
++----------------+
+| signin         |
++----------------+
+1 row in set (0.00 sec)
+
+mysql>
+
+테이블 구조 보기
+desc signin; - 입력
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| user_id | varchar(16) | YES  |     | NULL    |       |
+| user_pw | varchar(16) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+signin 테이블에 데이터 넣기
+
+INSERT INTO signin(user_id,user_pw)
+VALUES
+('soyeon','psy212'),   // Record(레코드) == Tuple(튜플) == Row(행==줄)
+('sujin','hsj212'),
+('minju','kmj212'),
+('soohyen','lsh212'),
+('juhee','pjh212'); - 입력
+
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+데이터 내용 확인하기(조회하기)
+
+SELECT * FROM signin; - 입력
+
++---------+---------+
+| user_id | user_pw |
++---------+---------+
+| soyeon  | psy212  |
+| sujin   | hsj212  |
+| minju   | kmj212  |
+| soohyen | lsh212  |
+| juhee   | pjh212  |
++---------+---------+
+5 rows in set (0.00 sec)
+
+
+
+
+JSP 웹페이지와 데이터베이스 연동(연결)
+
+JDBC 드라이버 설치
+    JDBC 드라이버 다운 
+    톰캣서버>webapps>examples>WEB-INF(파일 복사)
+    톰캣서버>webapps>ROOT>WEB-INF(복사한 파일로 덮어쓰기)
+    덮어쓴 파일안에 다운받은 JDBC드라이버 붙여넣기

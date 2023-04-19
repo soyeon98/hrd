@@ -30,6 +30,9 @@ public class J01_오버로딩 {
     public static Float Overloading(Float a, Float b){
         return a +b;
     }
+    public static int method1(int a, int b){
+        return a+b;
+    }
     public static void main(String[] args) {
 
         //static 없는 메서드
@@ -51,6 +54,7 @@ public class J01_오버로딩 {
         System.out.println("오버로딩4 결과 = "+overload4);
         System.out.println("오버로딩5 결과 = "+overload5);
         System.out.println();
+        System.out.println(method1(5,6));
 
 
     }
