@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0; box-sizing: border-box; vertical-align: middle;}
+body{width: 100%; background: #f5f6f7;}
+#wrap{width: 100%;}
+#wrap .container{width: 100%; max-width: 460px; margin: 0 auto; padding: 50px 0;}
+#wrap .container .gap{width: 100%;}
+#wrap .container .gap .top{width: 100%; margin: 0;text-align: end; padding: 10px 0 20px 0;}
+#wrap .container .gap .top a{text-decoration: none; color: #aaa;transition: all 0.3s;}
+#wrap .container .gap .top a:hover{ color: #333;}
+#wrap .container .gap .title{width: 100%;display: flex; justify-content: center; padding: 0 0 30px 0;}
+#wrap .container .gap .title .img{width: 260px; height: 60px; background: url(../img/m_naver_logo_20191126.png) no-repeat 0% 70%;}
+#wrap .container .gap .content{width: 100%;}
+#wrap .container .gap .content form{width: 100%;}
+#wrap .container .gap .content form .join-box{width: 100%; position: relative;}
+#wrap .container .gap .content form .join-box.birth{width: 100%;}
+#wrap .container .gap .content form .join-box.birth >input{width: 145px; margin: 0 3px;}
+#wrap .container .gap .content form .join-box label{ display: block; font-size: 15px; font-weight: 700; padding: 10px 0 5px 0;}
+#wrap .container .gap .content form .join-box label >span{font-size: 12px; color: #8e8e8e;}
+#wrap .container .gap .content form .join-box >input{width: 100%; height: 50px; padding: 0 15px; font-size: 15px; outline: 0; border: 1px solid #ccc;}
+#wrap .container .gap .content form .join-box >span{position: absolute;top: 49px; right: 15px; color: #8e8e8e; font-size: 15px; }
+#wrap .container .gap .content form .join-box select{width: 145px;height: 50px; padding: 0 15px;font-size: 15px; outline: 0; border: 1px solid #ccc;}
+#wrap .container .gap .content form .join-box select.gender{width: 100%;}
+#wrap .container .gap .content form button{width: 100%; height: 52px; background: #03c75a; color: #fff; border: 0; margin: 20px 0 0 0; font-size: 18px; font-weight: 700; cursor: pointer;}

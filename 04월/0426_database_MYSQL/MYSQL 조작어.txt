@@ -1,0 +1,114 @@
+
+MYSQL 조작어[DML]
+
+- INSERT, SELECT, UPDATE, DELETE 배우기
+
+// 데이터베이스 이름 : USER 
+    TABLE  테이블이름 : todo_list
+        필드(FIELD) = 열(칸) = ITEM  / 속성
+        레코드(RECORD) = 행(줄) = TUPLE
+
+문제1) 데이터 조회 : SELECT 
+    -조건1
+    todo_list 테이블안에 있는 데이터 중 
+    필드 todo_list의 목록을 보여라
+
+    //명령 형식
+    SELECT 필드이름 FROM 테이블이름;
+
+    SELECT todo_list FROM todo_list;
+
+    -조건2
+    todo_list 테이블안에 있는 데이터 중 
+    필드 idx,todo_list의 목록을 보여라
+
+    SELECT idx,todo_list FROM todo_list;
+
+    -조건3
+    todo_list 테이블안에 있는 데이터 중 
+    모든 필드의 목록을 보여라
+    
+    SELECT * FROM todo_list;
+
+    -조건4
+    todo_list 테이블안에 있는 데이터 중 idx가 5인 레코드를 보여라
+
+    //명령 형식
+    SELECT 필드이름 FROM 테이블이름 WHERE 조건;
+
+    SELECT * FROM todo_list WHERE idx=5;
+
+    -조건5
+    todo_list 테이블안에 있는 데이터 중 idx가 5 이상인 레코드를 보여라
+
+    SELECT * FROM todo_list WHERE idx>=5;
+
+    -조건6
+    todo_list 테이블안에 있는 데이터 중 idx가 5 이상 10이하인 레코드를 보여라
+
+    SELECT * FROM todo_list WHERE idx>=5 AND idx<=10;
+
+    -조건7
+    todo_list 테이블 안에 있는 데이터 중 필드 create_date 를 
+    내림차순으로 정렬하라 - ORDER BY
+
+    //명령 형식
+    SELECT * FROM 테이블이름 ORDER BY 정렬할 필드;
+
+    SELECT * FROM todo_list ORDER BY create_date DESC; DESCENDING(내림차순)
+
+   -조건8
+    todo_list 테이블 안에 있는 데이터 중 필드 create_date 를 
+    오름차순으로 정렬하라 
+
+    SELECT * FROM todo_list ORDER BY create_date ASC; ASCENDING(오름차순) 생략가능 디폴트값
+
+    -조건9
+    todo_list 테이블 안에 있는 데이터 중 필드 todo_list 를 
+    오름차순으로 정렬하라 
+
+    SELECT * FROM todo_list ORDER BY todo_list ASC;
+
+    -조건10
+    todo_list 테이블 안에 있는 데이터 중 필드 todo_list 의 내용중 "친구" 단어가 포함된 목록을 보여라
+
+    //명령 형식
+    SELECT * FROM 테이블이름 WHERE 해당 필드 포함(LIKE) '%검색할 단어%'; 앞 뒤 상관없이 검색
+    SELECT * FROM 테이블이름 WHERE 해당 필드 포함(LIKE) '검색할 단어%'; 시작 단어 검색
+    SELECT * FROM 테이블이름 WHERE 해당 필드 포함(LIKE) '%검색할 단어'; 끝나는 단어 검색
+    
+    SELECT * FROM todo_list WHERE todo_list LIKE '%친구%';
+
+    -조건11
+    // 마지막에 "먹기"라는 단어가 포함된 레코드 추출 후 할일 순으로 오름 차순 
+    SELECT * FROM todo_list WHERE todo_list LIKE '%먹기' ORDER BY todo_list ASC;
+
+    -조건12
+    // 마지막에 "먹기"라는 단어가 포함된 레코드 추출 후 idx 순으로 내림 차순 
+    SELECT * FROM todo_list WHERE todo_list LIKE '%먹기' ORDER BY idx DESC;
+
+    -조건13
+    // todo_list 테이블 안에 있는 데이터 중 idx 8이상이고 todo_list의 내용 중 단어에 친구가 포함되고 create_date의 날짜를 기준 내림차순 정렬 해라
+    SELECT * FROM todo_list WHERE IDX>=8 AND todo_list LIKE '%친구%' ORDER BY create_date DESC;
+
+    -조건14
+    // todo_list 테이블 안에 있는 데이터 중 idx 8이상이거나 todo_list의 내용 중 단어에 친구가 포함되고 create_date의 날짜를 기준 내림차순 정렬 해라
+    SELECT * FROM todo_list WHERE IDX>=8 OR todo_list LIKE '%친구%' ORDER BY create_date DESC;
+
+    -조건15
+    // todo_list 테이블 안에 있는 데이터 중 create_date 날짜를 조건으로 19일 1일간의 데이터 출력
+
+    //명령 형식
+    SELECT * FROM todo_list WHERE BETWEEN '날짜시간' AND 날짜시간';
+
+    SELECT * FROM todo_list WHERE create_date BETWEEN '2023-04-19 00:00:00' AND '2023-04-19 23:59:59';
+    SELECT * FROM todo_list WHERE create_date BETWEEN DATE('2023-04-19') AND DATE('2023-04-20');
+
+    -조건16
+    // todo_list 테이블 안에 있는 데이터 중 create_date 날짜를 조건으로 19일 18시부터 23시까지의 데이터 출력
+
+     SELECT * FROM todo_list WHERE create_date BETWEEN '2023-04-19 18:00:00' AND '2023-04-19 23:59:59';
+
+     SELECT * FROM todo_list WHERE create_date 
+     BETWEEN DATE('2023-04-19') AND DATE('2023-04-20') 
+     AND HOUR(create_date) BETWEEN 18 AND 24;
