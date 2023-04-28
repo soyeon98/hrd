@@ -1,0 +1,121 @@
+
+조회 SELECT 
+수정 UPDATE
+삭제 DELETE
+입력 INSERT
+
+CRUD
+Create : 데이터베이스생성 => 테이블 생성 => 데이터 입력
+Read : 조회
+Upate : 수정
+Delete : 삭제
+
+//////수정 UPDATE
+
+mysql> select * from todo_list;
++-----+--------------------------+---------------------+
+| idx | todo_list                | create_date         |
++-----+--------------------------+---------------------+
+|   1 | 친구랑 양꼬치 먹기       | 2023-04-19 15:58:24 |
+|   2 | 코딩 공부하기            | 2023-04-19 15:58:24 |
+|   3 | 에버랜드 가기            | 2023-04-19 15:58:24 |
+|   4 | 샤브샤브 먹기            | 2023-04-19 15:58:24 |
+|   5 | 파란 바다보러가기        | 2023-04-19 15:58:24 |
+|   6 |                          | 2023-04-19 18:06:10 |
+|   7 |                          | 2023-04-19 18:06:12 |
+|   8 | 친구들이랑 맛있는거 먹기 | 2023-04-19 18:06:16 |
+|   9 | 집에 가기...             | 2023-04-20 12:03:29 |
+|  10 | 침대에 눕기              | 2023-04-20 14:35:47 |
+|  11 | 친구랑 옷 사러 가기      | 2023-04-20 14:46:00 |
++-----+--------------------------+---------------------+
+11 rows in set (0.02 sec)
+
+//UPDATE 수정할 때 사용하는 명령어
+
+//명령 형식
+    UPDATE 테이블이름 SET 필드명 = '수정할 값' WHERE 조건;
+
+// 문제1) todo_list테이블의 todo_list필드의 내용 중 빈 레코드를 모두 수정하라
+
+    UPDATE todo_list SET todo_list = '연극 보러 가기' WHERE idx=6;
+    UPDATE todo_list SET todo_list = '치약 사기' WHERE idx=7;
+
+// 결과
+        |   6 | 연극 보러 가기           | 2023-04-19 18:06:10 |
+        |   7 | 치약 사기                | 2023-04-19 18:06:12 |
+
+
+// 문제2) todo_list테이블의 todo_list필드의 내용이 "침대에 눕기"로 된 레코드를 수정하라
+        UPDATE todo_list SET todo_list ='일찍 자기' WHERE todo_list='침대에 눕기';
+
+// 결과
+        |  10 | 일찍 자기                | 2023-04-20 14:35:47 |
+
+
+// 문제3) todo_list테이블의 todo_list필드의 내용에 "옷"이 포함된 레코드 수정
+        UPDATE todo_list SET todo_list ='친구랑 쇼핑하기' WHERE todo_list LIKE '%옷%';
+
+// 결과
+        |  11 | 친구랑 쇼핑하기          | 2023-04-20 14:46:00 |
+
+// 문제4) todo_list테이블의 idx가 3,5,8번인 레코드의 todo_list필드 내용을 '연잎 핫도그'로 수정하라
+        UPDATE todo_list 
+        SET todo_list='연잎 핫도그' 
+        WHERE idx=3 OR idx=5 OR idx=8; || WHERE idx IN (3,5,8); // OR와 같은 개념
+        
+// 결과
+        |   3 | 연잎 핫도그        | 2023-04-19 15:58:24 |
+        |   5 | 연잎 핫도그        | 2023-04-19 15:58:24 |
+        |   8 | 연잎 핫도그        | 2023-04-19 18:06:16 |
+
+// 문제5) todo_list테이블의 todo_list필드에 연잎 핫도그가 포함되지 않은 레코드를 모두 "우거지 뼈다귀 감자탕"으로 수정하라
+    UPDATE todo_list
+    SET todo_list="우거지 뼈다귀 감자탕"
+    WHERE todo_list NOT LIKE "%연잎 핫도그%";
+
+ // 내 계획으로 다시 수정하기
+    UPDATE todo_list
+    set todo_list="바다보러가기"
+    where idx=1; 
+
+    UPDATE todo_list
+    set todo_list="에버랜드 가기"
+    where idx=2;
+
+    UPDATE todo_list
+    set todo_list="연극보러 혜화가기"
+    where todo_list like "%연잎%";
+
+    UPDATE todo_list
+    set todo_list="수현이랑 샤브샤브 먹기"
+    where idx>=9;
+
+    UPDATE todo_list
+    set todo_list="보드게임 하기"
+    where todo_list not like "%기";
+
+    UPDATE todo_list
+    SET todo_list="코딩 공부하기"
+     where idx IN (9,8);
+
+    UPDATE todo_list
+    SET todo_list="연잎핫도그"
+     where idx IN (5,6);
+
+    ///////////////////////////////////////////////////////////////////
+    삭제 DELETE
+
+    DELETE FROM 테이블이름 WHERE 조건;
+
+    문제1) IDX가 8인 레코드 삭제
+
+    DELETE FROM todo_list WHERE idx=8;
+
+    //결과 8번 삭제됨
+    |   7 | 보드게임 하기          | 2023-04-19 18:06:12 |
+    |   9 | 코딩 공부하기          | 2023-04-20 12:03:29 |
+
+    문제2) todo_list필드가 연잎핫도그인 레코드 삭제
+    DELETE FROM todo_list WHERE todo_list="연잎핫도그";
+
+    DELETE FROM todo_list;
