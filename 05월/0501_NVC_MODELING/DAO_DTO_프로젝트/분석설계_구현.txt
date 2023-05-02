@@ -1,0 +1,58 @@
+JDBC
+데이터베이스 & JSP 연결
+
+JSP 데이터베이스 자바코딩 JSP 뷰템플릿 코딩 + 입출력
+분류작업
+
+CRUD 구현
+
+모델(MODEL)      =>  데이터베이스 입출력 게터, 세터(자바빈)
+뷰(VIEW)         =>  뷰탬플릿
+컨트롤(CONTROL)  =>  자바코딩
+
+데이터(Data) 접근(Access) 객체(Object) => DAO => 자바 코딩(자바코딩으로 데이터베이스 인증과 설정 INSERT, DELETE, UPDATE, CREATE, SELECT,...)
+
+데이터(Data) 전송(Transfer) 객체(Object) => DTO => 자바 코딩(자바빈즈 게터 세터) : 데이터 가져오기, 설정하기 
+
+
+
+
+    접근 객체 Connection 컨넥션
+    사용자 데이터베이스 url/이름 : /user
+    사용자 데이터베이스아이디 : root
+    사용자 데이터베이스비밀번호 : 1234
+    
+    1.Connection 컨넥션 연결 만들기
+    클래스 => 생성자 => 다른 메서드(함수)
+
+    2. 데이터베이스 user => 테이블 만들기(user_table)
+    필드 : 아이디(PK)(16), 비밀번호(16), 이름(50), 휴대폰(13), 이메일(250) 
+    위 클래스 생성자 public UserDAO() 아래 코드는 
+    데이터베이스 테이블이 있어야 저장, 수정, 삭제, 조회등을 할 수 있다.
+    테이블에 데이터 저장
+    INSERT INTO 테이블이름() VALUES();
+
+    CREATE TABLE user_table(
+        user_id     VARCHAR(16)     NOT NULL     PRIMARY KEY, // PRIMARY KEY(PK) 중복 입력 불가 => 중복 입력 시 오류 발생 
+        user_pw     VARCHAR(16)     NOT NULL,
+        user_name     VARCHAR(50)     NOT NULL,
+        user_hp     VARCHAR(13)     NOT NULL,
+        user_email     VARCHAR(250)
+    );
+
+    3. DTO 자바빈 만들기
+
+    4. 회원 가입 메서드 SQL(insert) 처리문
+     public int insert(UserDTO userDTO)
+
+    5. 입력폼 만들기 JSP
+    user_sign_in.jsp
+
+    6. 입력폼 받는 useBean DTO 연동 JSP
+    user_sign_in_insert.jsp
+
+    6-1 자바스크립트 코딩 테스트
+    6-2 useBean DTO 연동 JSP 테스트
+
+    6-3 useBean DTO & DAO 연동 JSP
+

@@ -156,7 +156,7 @@ export default function IntroMainComponent ()  {
     React.useEffect(()=>{
         let setId=0;
         function saleTimer(){
-            let start = new Date('2023-04-27 17:50:00');// 1. 타임세일 시작 시점
+            let start = new Date('2023-04-27 23:59:59');// 1. 타임세일 시작 시점
             let now = new Date();// 2. 현재시간 
             start.setHours(start.getHours()+24);// 3. 시간+24 일일특가 시간 셋팅 세터함수
             let end = start-now;  // 4. 남은 시간(세일 종료) = 타임세일시작시간(+24)-현재시간
