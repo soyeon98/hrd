@@ -1,0 +1,10 @@
+
+create table gaib_table(
+    idx int not null primary key auto_increment,
+    user_id varchar(16) not null, 
+    user_pw varchar(16) not null, 
+    user_name varchar(30) not null, 
+    user_hp varchar(13) not null, 
+    user_email varchar(250), 
+    user_adr varchar(250) 
+);

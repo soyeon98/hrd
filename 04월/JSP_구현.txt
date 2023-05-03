@@ -19,6 +19,26 @@ JSP 페이지에서는
 표현식(Expression)   : <%= %>
 
 localhost:8080/jsp/0410_과제_마켓컬리_폼전송/J01_01_과제.jsp
-localhost:8080/jsp/0419_JSP_프로그래밍
+localhost:8080/jsp/0425_dto_혼자해보기/beansdto/Study.jsp
 127.0.0.1:8080/jsp/0417_JSP_프로그래밍/J01_쿠키설정.jsp
 192.168.40.28:8080/jsp/0419_JSP_프로그래밍
+
+
+ROOT\jsp\0420_JSP_프로그래밍
+
+localhost:8080/jsp/0425_과제_네이버/naver
+
+
+CREATE TABLE member (
+  num varchar(30) NOT NULL primary key,
+  sign1 varchar(50) NOT NULL,
+  sign2 varchar(50) NOT NULL,
+  id varchar(30) NOT NULL,
+  pw varchar(30) NOT NULL,
+  chk_que varchar(50) NOT NULL,
+  chk_ans varchar(10) NOT NULL,
+  hp varchar(11) NOT NULL,
+  name varchar(30) NOT NULL,
+  email varchar(250) NOT NULL,
+  receive varchar(50) NOT NULL
+);

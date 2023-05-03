@@ -52,7 +52,7 @@
             res+="<caption>회원가입 응답 폼</caption>";
             res+="<tr>";
             res+="<th>아이디</th>";
-            res+="<th>비밀번호</th>";
+            res+="<th>비밀번호</th>"; 
             res+="<th>비밀번호 확인</th>";
             res+="<th>이름</th>";
             res+="<th>이메일</th>";

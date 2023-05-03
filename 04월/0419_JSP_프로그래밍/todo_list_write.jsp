@@ -18,7 +18,7 @@
     // 1. JDBC 드라이버 로딩
     Class.forName("com.mysql.jdbc.Driver");
 
-    // 2. DB 인증과 연결
+    // 2. DB 인증(Authentication)과 연결(Connection)
     Connection conn = DriverManager.getConnection(
         "jdbc:mysql://localhost:3306/user","root","1234"
     );
