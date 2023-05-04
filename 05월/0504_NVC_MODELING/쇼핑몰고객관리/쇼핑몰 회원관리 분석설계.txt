@@ -1,0 +1,90 @@
+
+쇼핑몰 회원관리 분석설계
+
+데이터베이스 : user
+테이블 : kurly_table
+필드 :
+     idx         int          not null auto_increment,
+     user_id     varchar(16)  not null,
+     user_pw     varchar(16)  not null,
+     user_name   varchar(30)  not null,
+     user_email  varchar(250) not null,
+     user_hp     varchar(13)  not null,
+     user_addr   varchar(250) not null,
+     user_gender varchar(5),
+     user_birth  varchar(10),
+     gaib_date   timestamp default current_timestamp 
+     primary key (idx, user_id, user_email)
+
+     create table kurly_table(
+        idx         int(11)      not null auto_increment,
+        user_id     varchar(16)  not null,
+        user_pw     varchar(16)  not null,
+        user_name   varchar(30)  not null,
+        user_email  varchar(250) not null,
+        user_hp     varchar(13)  not null,
+        user_addr   varchar(250) not null,
+        user_gender varchar(5),
+        user_birth  varchar(10),
+        gaib_date   timestamp default current_timestamp, 
+        primary key (idx, user_id, user_email)
+     );
+//////////////////////////////////////////////////////////////////////////
+
+ mysql> desc kurly_table;
++-------------+--------------+------+-----+-------------------+-------------------+
+| Field       | Type         | Null | Key | Default           | Extra             |
++-------------+--------------+------+-----+-------------------+-------------------+
+| idx         | int          | NO   | PRI | NULL              | auto_increment    |
+| user_id     | varchar(16)  | NO   | PRI | NULL              |                   |
+| user_pw     | varchar(16)  | NO   |     | NULL              |                   |
+| user_name   | varchar(30)  | NO   |     | NULL              |                   |
+| user_email  | varchar(250) | NO   | PRI | NULL              |                   |
+| user_hp     | varchar(13)  | NO   |     | NULL              |                   |
+| user_addr   | varchar(250) | NO   |     | NULL              |                   |
+| user_gender | varchar(5)   | YES  |     | NULL              |                   |
+| user_birth  | varchar(10)  | YES  |     | NULL              |                   |
+| gaib_date   | timestamp    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++-------------+--------------+------+-----+-------------------+-------------------+
+10 rows in set (0.01 sec)
+
+//////////////////////////////////////////
+
+    // 2. 로그인 signin
+    public int signin(UserDTO userDTO){
+
+        String SQL ="select * from kurly_table where user_id=?";
+        try{
+            ps= conn.prepareStatement(SQL);
+            ps.setString(1,userDTO.getUser_id());
+
+            rs = ps.executeQuery();
+
+            if(rs.next()){
+                if(rs.getString(3).equals(userDTO.getUser_pw())){
+                    return 1; //로그인 성공
+
+                    // idx
+                    // rs.getInt(1)
+
+                    // user_id
+                    // rs.getString(2);
+
+                    // user_pw
+                    // rs.getString(3);
+                    // ...
+                }
+                else{
+                    return 0;
+                }
+            }
+            else{
+                return-1;
+            }
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return -2;
+    }
+
