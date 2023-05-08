@@ -1,0 +1,25 @@
+
+http://localhost:8080/jsp/0508_NVC_MODELING/쇼핑몰고객관리/kurly_user_main.jsp
+
+메인페이지 예시
+    - 회원관리
+
+//비회원//////////////////////////
+    <h3>접속하기</h3>
+    <ul>
+        <li><a href="./kurly_user_signin.jsp">로그인</a></li>
+        <li><a href="./kurly_user_signup.jsp">회원가입</a></li>
+    </ul>
+
+//회원/////////////////////////
+    <h3>회원관리</h3>
+    <ul>
+        <li><a href="./kurly_user_update.jsp">회원정보수정</a></li>
+        <li><a href="./kurly_user_delete.jsp">회원 탈퇴</a></li>
+        <li><a href="./kurly_user_logout.jsp">로그아웃</a></li>
+    </ul>
+
+ // 회원탈퇴
+        로그인 상태에서 가능
+        삭제폼에서 아이디 입력상자에 로그인아이디가 바인딩되어있고 비밀번호는 빈 칸
+        비밀번호를 입력하고 탈퇴버튼을 클릭 전송하여 구현한다.  
