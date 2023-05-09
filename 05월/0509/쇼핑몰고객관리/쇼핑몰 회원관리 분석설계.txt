@@ -1,0 +1,71 @@
+쇼핑몰 회원관리 분석 설계
+
+테이블 : kurly_table
+idx               INT            NOT NULL    PRIMARY KEY   AUTO_INCREMENT,
+user_id           VARCHAR(16)    NOT NULL    PRIMARY KEY,
+user_pw           VARCHAR(16)    NOT NULL    PRIMARY KEY,
+user_name         VARCHAR(30)    NOT NULL,
+user_email        VARCHAR(250)   NOT NULL,
+user_hp           VARCHAR(13)    NOT NULL,
+user_addr         VARCHAR(250)   NOT NULL,
+user_gender       VARCHAR(4),
+user_birth        VARCHAR(10),
+user_chooga       VARCHAR(20),
+user_service_all  VARCHAR(20),
+user_service_1    VARCHAR(30),
+user_service_2    VARCHAR(30),
+user_service_3    VARCHAR(30),
+user_service_4    VARCHAR(30),
+user_service_5    VARCHAR(30),
+user_service_6    VARCHAR(30),
+user_service_7    VARCHAR(30),
+gaib_date         TIMESTAMP      DEFAULT    CURRENT_TIMESTAMP
+
+CREATE TABLE kurly_table(
+  idx           INT            NOT NULL    AUTO_INCREMENT,
+  user_id       VARCHAR(16)    NOT NULL,
+  user_pw       VARCHAR(16)    NOT NULL,
+  user_name     VARCHAR(30)    NOT NULL,
+  user_email    VARCHAR(250)   NOT NULL,
+  user_hp       VARCHAR(13)    NOT NULL,
+  user_addr     VARCHAR(250)   NOT NULL,
+  user_gender   VARCHAR(4),
+  user_birth    VARCHAR(20),
+  user_chooga       VARCHAR(20),
+  user_service_all  VARCHAR(20),
+  user_service_1    VARCHAR(30),
+  user_service_2    VARCHAR(30),
+  user_service_3    VARCHAR(30),
+  user_service_4    VARCHAR(30),
+  user_service_5    VARCHAR(30),
+  user_service_6    VARCHAR(30),
+  user_service_7    VARCHAR(30),
+  gaib_date     TIMESTAMP      DEFAULT    CURRENT_TIMESTAMP,
+  PRIMARY KEY(idx, user_id, user_email)
+);
+
+//2. 회원로그인 signin
+  public int signin(String user_id, String user_pw){
+    try{
+      String SQL = "SELECT user_pw FROM kurly_table WHERE user_id=?";
+      ps = conn.prepareStatement(SQL);
+      ps.setString(1, user_id);
+      rs = ps.executeQuery();
+      
+      if(rs.next()){
+        if(rs.getString(1).equals(user_pw)){
+          return 1;   //로그인 성공
+        }
+        else{
+          return 0;   //로그인 실패(비밀번호 틀림)
+        }
+      }
+      else{
+        return -1;    //로그인 실패(아이디 틀림)
+      }
+    } 
+    catch(Exception e){
+      e.printStackTrace();
+    }
+    return -2;        //로그인 실패(데이터베이스오류)
+  }
