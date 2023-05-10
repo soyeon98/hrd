@@ -7,7 +7,7 @@ public class UserDTO {
   private String user_email; 
   private String user_hp;
   private String user_addr;
-  private String user_gender;
+  private String user_gender; 
   private String user_birth_year;
   private String user_birth_month;
   private String user_birth_date;

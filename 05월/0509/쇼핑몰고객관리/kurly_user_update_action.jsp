@@ -19,6 +19,7 @@
 <jsp:setProperty name="userDTO" property="user_birth_year" />
 <jsp:setProperty name="userDTO" property="user_birth_month" />
 <jsp:setProperty name="userDTO" property="user_birth_date" />
+<jsp:setProperty name="userDTO" property="user_chooga" />
 <jsp:setProperty name="userDTO" property="user_service_all" />
 <jsp:setProperty name="userDTO" property="user_service_1" />
 <jsp:setProperty name="userDTO" property="user_service_2" />

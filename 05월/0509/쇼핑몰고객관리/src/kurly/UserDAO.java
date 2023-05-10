@@ -9,7 +9,7 @@ public class UserDAO {
     try{
       String URL = "jdbc:mysql://localhost:3306/soyeon";
       String ID = "root";
-      String PW = "1234";
+      String PW = "1234";   
       Class.forName("com.mysql.jdbc.Driver");   
       conn = DriverManager.getConnection(URL, ID, PW);
     }   

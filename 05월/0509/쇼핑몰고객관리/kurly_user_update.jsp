@@ -5,10 +5,6 @@
   pageEncoding="UTF-8"
 %>
 
-<%@ page import="kurly.UserDAO"%>
-<%@ page import="kurly.UserDTO"%>
-<%@ page import="java.util.*"%>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,28 +15,18 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <%
-    String loginId=null;
-    if(session.getAttribute("user_id")!=null){
-        loginId =(String)session.getAttribute("user_id");
-    }
-%>
-<%
-    UserDAO userDAO = new UserDAO();
-    UserDTO userDTO = userDAO.getJoin(loginId);
-%>
     <div id="wrap">
         <main id='signUp'>
             <section id="section1">
                 <div class="container">
                     <div class="gap">
                                 <div class="title">
-                                    <h2>정보수정</h2>
+                                    <h2>회원가입</h2>
 
                                     <p><span><i>*</i>필수입력사항</span></p>
                                 </div>
                                 <div class="content">
-                                    <form name='sign_up_form' id='signUpForm' method='post' action="./kurly_user_update_action.jsp">
+                                    <form name='sign_up_form' id='signUpForm' method='post' action="./kurly_user_signup_action.jsp">
                                         <ul>
                                             <li>
                                                 <div>
@@ -52,7 +38,6 @@
                                                             name='user_id' 
                                                             id='userId' 
                                                             placeholder='아이디를 입력해주세요' 
-                                                            value="<%=userDTO.getUser_id()%>"
                                                         />
                                                     </div>
                                                     <button  
@@ -72,7 +57,6 @@
                                                             name='user_pw' 
                                                             id='userPw' 
                                                             placeholder='비밀번호를 입력해주세요' 
-                                                            value="<%=userDTO.getUser_pw()%>"
                                                         />
                                                     </div>
                                                     <p class="error-msg"></p>
@@ -87,7 +71,6 @@
                                                             name='user_name' 
                                                             id='userName' 
                                                             placeholder='이름을 입력해주세요' 
-                                                            value="<%=userDTO.getUser_name()%>"
                                                         />
                                                     </div>
                                                     <p class="error-msg">이름 메시지 텍스트</p>
@@ -101,15 +84,14 @@
                                                             type='email' 
                                                             name='user_email' 
                                                             id='userEmail' 
-                                                            placeholder='이메일을 입력해주세요'
-                                                            value="<%=userDTO.getUser_email()%>" 
+                                                            placeholder='이메일을 입력해주세요' 
                                                         />
                                                     </div>
                                                     <button  
                                                         type='button'
-                                                   
+                                                        onClick={onClickUserEmailOk}
                                                     >중복확인</button>
-                                                 
+                                                    <p class="error-msg"></p>
                                                 </div>
                                             </li>
                                             <li>
@@ -122,7 +104,6 @@
                                                             name='user_hp' 
                                                             id='userHp' 
                                                             placeholder='숫자만 입력해주세요' 
-                                                            value="<%=userDTO.getUser_hp()%>"
                                                         />
                                                     </div>
                                                     <button class="hp-num-btn" type='button'>인증번호 받기</button>
@@ -138,7 +119,6 @@
                                                             name='user_addr' 
                                                             id='userAddr' 
                                                             placeholder='주소 검색' 
-                                                            value="<%=userDTO.getUser_addr()%>"
                                                             />
                                                         <h5>샛별배송</h5>
                                                         
@@ -155,9 +135,9 @@
                                                 <div>
                                                     <label>성별</label>
                                                     <div class="center-box gender">
-                                                        <label><input type='radio' name='user_gender' id='userMale' value='남자' <% if(userDTO.getUser_gender().equals("남자")){%>checked="checked"<%}%>/>남자</label>
-                                                        <label><input type='radio' name='user_gender' id='userFemale' value='여자' <% if(userDTO.getUser_gender().equals("여자")){%>checked="checked"<%}%>/>여자</label>
-                                                        <label><input type='radio' name='user_gender' id='userNone' value='선택안함' <% if(userDTO.getUser_gender().equals("선택안함")){%>checked="checked"<%}%>/>선택안함</label>
+                                                        <label><input type='radio' name='user_gender' id='userMale' value='남자'/>남자</label>
+                                                        <label><input type='radio' name='user_gender' id='userFemale' value='여자'/>여자</label>
+                                                        <label><input type='radio' name='user_gender' id='userNone' value='선택안함'/>선택안함</label>
                                                     </div>                                            
                                                 </div>
                                             </li>
@@ -310,7 +290,7 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <button type='submit'>수정하기</button>
+                                                <button type='submit'>가입하기</button>
                                             </li>
                                         </ul>
                                     </form>

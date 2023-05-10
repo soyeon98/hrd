@@ -47,10 +47,11 @@
 <%
       }
       else{
+        session.setAttribute("user_id",userDTO.getUser_id());
 %>
 <script>
   alert("로그인되었습니다!");
-  history.back();
+  location.href="./kurly_user_main.jsp";
 </script>
 <%
       }
