@@ -1,0 +1,45 @@
+<aa>
+    <member>
+        <list>
+            <name>박소연 </name><kor> 100</kor><eng> 100</eng><mat> 100</mat> 
+        </list>
+        <list>
+            <name>이아현 </name><kor> 86</kor><eng> 81</eng><mat> 82</mat> 
+        </list>
+        <list>
+            <name>박미연 </name><kor> 93</kor><eng> 96</eng><mat> 98</mat> 
+        </list>
+        <list>    
+            <name>박주희 </name><kor> 87</kor><eng> 85</eng><mat> 83</mat> 
+        </list>
+        <list>    
+            <name>이수현 </name><kor> 93</kor><eng> 96</eng><mat> 98</mat> 
+        </list>
+        <list>    
+            <name>김민주 </name><kor> 82</kor><eng> 72</eng><mat> 98</mat> 
+        </list>
+    </member>
+
+    <school>
+        <row>
+            <name>배지희</name>
+            <score>100</score>
+        </row>
+        <row>
+            <name>임성택</name>
+            <score>86</score>
+        </row>
+        <row>
+            <name>권진희</name>
+            <score>98</score>
+        </row>
+        <row>
+            <name>송명언</name>
+            <score>99</score>
+        </row>
+        <row>
+            <name>조이담</name>
+            <score>88</score>
+        </row>
+    </school>
+</aa>
