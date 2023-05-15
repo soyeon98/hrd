@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0; box-sizing: border-box; vertical-align: middle;}
+body{width: 100%; background: #f5f6f7; }
+ul{list-style: none;}
+#wrap{width: 100%; margin: 100px 0;}
+#wrap .container{width: 100%; max-width: 620px; margin: 0 auto; padding: 50px 80px; background: #fff;}
+#wrap .container .gap{width: 100%;}
+#wrap .container .gap .top{width: 100%; margin: 0;text-align: end; padding: 10px 0 20px 0;}
+#wrap .container .gap .top a{text-decoration: none; color: #aaa;transition: all 0.3s;}
+#wrap .container .gap .top a:hover{ color: #333;}
+#wrap .container .gap .title{width: 100%;display: flex; justify-content: center; padding: 0 0 30px 0;}
+#wrap .container .gap .title .img{width: 260px; height: 60px; background: url(../img/m_naver_logo_20191126.png) no-repeat 0% 70%;}
+#wrap .container .gap .content{width: 100%; text-align: center;}
+#wrap .container .gap .content h2{ padding: 10px 0 5px 0;color: #03c75a; font-size: 30px; }
+#wrap .container .gap .content h3{text-align: right;border-bottom: 1px solid #03c75a; padding: 0 0 5px 0; font-size: 16px;}
+#wrap .container .gap .content ul{width: 100%; padding: 10px 0 0 0;}
+#wrap .container .gap .content ul li{ padding:5px 0;}
+#wrap .container .gap .content ul li a{text-decoration: none; color: #333; font-size: 18px; font-weight: 600; transition: all 0.3s;}
+#wrap .container .gap .content ul li a:hover{ color: #03c75a; }
+#wrap .list{width: 100%; padding: 100px 0 ;}
+#wrap .list table{width: 1000px; margin: 0 auto; border-collapse: collapse;}
+#wrap .list table caption{padding: 20px 0; font-size: 35px; font-weight: 600; color: #03c75a;}
+
+#wrap .list table tr th,td{border: 2px solid #03c75a}
+#wrap .list table tr th{background: #3ee98b; height: 45px;}
+#wrap .list table tr td{text-align: center; background: #fff; height: 40px;}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/lib/jquery-2.2.4.min.js"></script>
+    <script src="./js/ajax_json.js" defer></script>
+    <script src="./js/ajax_txt.js" defer></script>
+    <script src="./js/ajax_csv.js" defer></script>
+    <script src="./js/ajax_xml.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <nav>
+            <a href="#" class="library-csv">도서관 소장도서(CSV)</a>
+            <span> | </span>
+            <a href="#" class="library-txt">도서관 소장도서(TXT)</a>
+            <span> | </span>
+            <a href="#" class="library-json">도서관 소장도서(JSON)</a>
+            <span> | </span>
+            <a href="#" class="addr-xml">주소록(XML)</a>
+        </nav>
+        <table>
+            <caption>경기도 파주시_도서관 소장도서 [AJAX : CSV]</caption>
+            <thead>
+                <tr>
+                    <th>도서관명</th>
+                    <th>총류</th>
+                    <th>철학</th>
+                    <th>종교</th>
+                    <th>사회과학</th>
+                    <th>순수과학</th>
+                    <th>기술과학</th>
+                    <th>예술</th>
+                    <th>언어</th>
+                    <th>문학</th>
+                    <th>역사</th>
+                    <th>데이터기준일</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-csv">
+                <!-- 바인딩 -->
+            </tbody>
+        </table>
+        <table>
+            <caption>경기도 파주시_도서관 소장도서 [AJAX : TXT]</caption>
+            <thead>
+                <tr>
+                    <th>도서관명</th>
+                    <th>총류</th>
+                    <th>철학</th>
+                    <th>종교</th>
+                    <th>사회과학</th>
+                    <th>순수과학</th>
+                    <th>기술과학</th>
+                    <th>예술</th>
+                    <th>언어</th>
+                    <th>문학</th>
+                    <th>역사</th>
+                    <th>데이터기준일</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-txt">
+                <!-- 바인딩 -->
+            </tbody>
+        </table>
+        <table>
+            <caption>경기도 파주시_도서관 소장도서 [AJAX : JSON]</caption>
+            <thead>
+                <tr>
+                    <th>도서관명</th>
+                    <th>총류</th>
+                    <th>철학</th>
+                    <th>종교</th>
+                    <th>사회과학</th>
+                    <th>순수과학</th>
+                    <th>기술과학</th>
+                    <th>예술</th>
+                    <th>언어</th>
+                    <th>문학</th>
+                    <th>역사</th>
+                    <th>데이터기준일</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-json">
+                <!-- 바인딩 -->
+            </tbody>
+        </table>
+        <table>
+            <caption>주소록[AJAX : XML]</caption>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>전화번호</th>
+                    <th>주소</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-xml">
+                <!-- 바인딩 -->
+            </tbody>
+        </table>
+    
+    </div>
+   
+</body>
+</html>

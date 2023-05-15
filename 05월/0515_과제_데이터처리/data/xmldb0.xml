@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database>
+	<record>
+		<name>김혁민</name>
+		<tel>010-9764-6431</tel>
+		<address>서울시 성동구</address>
+	</record>
+	<record>
+		<name>이진아</name>
+		<tel>010-6473-9461</tel>
+		<address>경기도 안양시</address>
+	</record>
+	<record>
+		<name>최찬호</name>
+		<tel>010-7694-6143</tel>
+		<address>경기도 시흥시</address>
+	</record>
+	<record>
+		<name>박한수</name>
+		<tel>010-6446-9716</tel>
+		<address>충청북도 단양군</address>
+	</record>
+	<record>
+		<name>권수진</name>
+		<tel>010-4697-6431</tel>
+		<address>경상북도 영양군</address>
+	</record>
+</database>
