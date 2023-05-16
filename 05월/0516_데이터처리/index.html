@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/lib/jquery-2.2.4.min.js"></script>
+    <script src="./js/ajax_csv.js" defer></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <nav>
+            <a href="#" class="resort-csv">관광펜션업_영업실태조사</a>
+            <span> | </span>
+            <a href="#" class="resort-res">관광펜션업_영업실태조사_집계표</a>
+          
+        </nav>
+        <table>
+            <caption>관광펜션업_영업실태조사</caption>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>개방서비스명</th>
+                    <th>인허가일자</th>
+                    <th>영업상태명</th>
+                    <th>상세영업상태명</th>
+                    <th>소재지전체주소</th>
+                    <th>우편번호</th>
+                    <th>시설면적</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-csv">
+                <!-- 바인딩 -->
+            </tbody>
+        </table>   
+        <table class="res">
+            <caption>관광펜션업_영업실태조사_집계</caption>
+            <thead>
+                <tr>
+                    <th>영업상태명</th>
+                    <th>합계</th>
+                </tr>
+            </thead>
+            <tbody class="tbody-csv-res">
+                <!-- 바인딩 -->
+
+            </tbody>
+        </table>   
+    </div>
+   
+</body>
+</html>
