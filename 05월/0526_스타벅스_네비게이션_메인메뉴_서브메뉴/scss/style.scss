@@ -1,0 +1,59 @@
+@import url('../css/fonts.css');
+@import url('../css/reset.css');
+@import url('../css/header.css');
+
+
+
+
+#wrap {
+    width: 100%;
+    #main{
+        width: 100%;
+        section{
+            width: 100%;
+            &#section1{
+                height: 615px;
+                z-index: 1;
+                position: relative;
+                background: url(../img/2023_summer1_promotion_bg_1_230426.jpg) no-repeat 50% 50%;
+                background-size: cover;
+                .top-logo{
+                    position: absolute;
+                    width: 360px;
+                    z-index: 3;
+                    top: 200px;
+                    left: 250px;
+                }
+               .drink1{
+                width: 450px;
+                position: absolute;
+                z-index: 3;
+                top: 200px;
+                left: 630px;
+               }
+               .drink2{
+                width: 450px;
+                position: absolute;
+                z-index: 3;
+                top: 200px;
+                left: 1070px;
+               }
+               .drink3{
+                position: absolute;
+                width: 350px;
+                z-index: 2;
+                top: 70px;
+                left: 1200px;
+               }
+               .drink4{
+                width: 333px;
+                position: absolute;
+                z-index: 2;
+                top: 80px;
+                left: 750px;
+               }
+               
+            }
+        }
+    }
+}

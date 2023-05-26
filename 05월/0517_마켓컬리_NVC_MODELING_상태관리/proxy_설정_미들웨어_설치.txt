@@ -1,0 +1,21 @@
+
+setupProxys.js
+
+// 프록시서버 주소 1개만 지원 미들웨어(패키지) 설치 필요 -- http-proxy-middleware
+    
+
+// npm i -g yarn 얀 설치
+// yarn add http-proxy-middleware  http-proxy-middleware설치
+
+  "proxy":{ 
+    "/jsp":{   
+      "target":"http://localhost:8080"
+    },
+    "/php":{
+      "target":"http://localhost:8080"
+    },
+    "/asp":{
+      "target":"http://localhost:8080"
+    }
+
+  }
