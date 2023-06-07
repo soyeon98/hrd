@@ -1,0 +1,108 @@
+#cart{
+    width: 100%;
+    padding: 70px 0 100px 0;
+    .container{
+        width: 100%;
+        max-width: 1050px;
+        margin: 0 auto;
+        .gap{
+            width: 100%;
+            .title{
+                width: 100%;
+                padding: 0 0 70px 0;
+                h1{
+                    text-align: center;
+                    font-size: 28px;
+                    color: #333;
+                    font-weight: 600;
+                    letter-spacing: -1.5px;
+                }
+            }
+            .content{
+                width: 100%;
+                display: flex;
+                .left{
+                    width: 740px;
+                    >ul{
+                        width: 100%;
+                        >li{
+                            width: 100%;
+                            &:first-child,
+                            &:last-child{
+                                >span{
+                                    button{
+                                        display: inline-flex;
+                                        align-items: center;
+                                        border: 0;
+                                        height: 30px;
+                                        background: transparent;
+                                        color: #333;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        &:first-of-type{
+                                            padding: 0 0 0 35px;
+                                            background: transparent url(../../../../public/images/cart/checkbox_off_icon.svg) no-repeat 0 50%;
+                                            background-size:24px 24px ;
+                                            strong{
+                                                color: #333;
+                                                font-weight: 600;
+                                                font-size: 14px;
+                                                letter-spacing: 1.5px;
+                                                margin: 0 0 0 3px;
+                                            }
+                                        }
+                                        &:last-of-type{
+
+                                        }
+                                        &.on{
+                                            &:first-of-type{
+                                                background-image: url(../../../../public/images/cart/checkbox_on_icon.svg);
+
+                                            }
+                                            &:last-of-type{
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                    >i{
+                                        color: #bbb;
+                                        font-weight: 400;
+                                        font-size: 12px;
+                                        margin: 0 15px;
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                dl{
+                                    dt{
+                                        padding: 30px;
+                                        display: flex;
+                                    }
+                                    dd{
+                                        padding: 20px 0;
+                                        ul{
+                                            display: flex;
+                                        }
+                                    }
+                                }
+                            }
+                    
+                        }
+                    }
+
+                }
+                .right{
+                    width: 310px;
+                    padding: 0 0 0 26px;
+                    >ul{
+                        >li{
+                            &:first-child{}
+                            &:nth-child(2){}
+                            &:last-child{}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
