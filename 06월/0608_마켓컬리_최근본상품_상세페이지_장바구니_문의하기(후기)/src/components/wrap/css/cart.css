@@ -1,0 +1,111 @@
+#cart {
+  width: 100%;
+  padding: 70px 0 100px 0;
+}
+#cart .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+#cart .container .gap {
+  width: 100%;
+}
+#cart .container .gap .title {
+  width: 100%;
+  padding: 0 0 70px 0;
+}
+#cart .container .gap .title h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+#cart .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#cart .container .gap .content .left {
+  width: 740px;
+}
+#cart .container .gap .content .left > ul {
+  width: 100%;
+}
+#cart .container .gap .content .left > ul > li {
+  width: 100%;
+}
+#cart .container .gap .content .left > ul > li:first-child > span button, #cart .container .gap .content .left > ul > li:last-child > span button {
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  height: 30px;
+  background: transparent;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
+#cart .container .gap .content .left > ul > li:first-child > span button:first-of-type, #cart .container .gap .content .left > ul > li:last-child > span button:first-of-type {
+  padding: 0 0 0 35px;
+  background: transparent url(../../../../public/images/cart/checkbox_off_icon.svg) no-repeat 0 50%;
+  background-size: 24px 24px;
+}
+#cart .container .gap .content .left > ul > li:first-child > span button:first-of-type strong, #cart .container .gap .content .left > ul > li:last-child > span button:first-of-type strong {
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  margin: 0 0 0 3px;
+}
+#cart .container .gap .content .left > ul > li:first-child > span button.on:first-of-type, #cart .container .gap .content .left > ul > li:last-child > span button.on:first-of-type {
+  background-image: url(../../../../public/images/cart/checkbox_on_icon.svg);
+}
+#cart .container .gap .content .left > ul > li:first-child > span button.on:last-of-type, #cart .container .gap .content .left > ul > li:last-child > span button.on:last-of-type {
+  cursor: pointer;
+}
+#cart .container .gap .content .left > ul > li:first-child > span > i, #cart .container .gap .content .left > ul > li:last-child > span > i {
+  color: #bbb;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0 15px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) dl dt {
+  padding: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) dl dt div:first-child {
+  display: flex;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) dl dt div:first-child img {
+  width: 30px;
+  margin: 0 10px 0 0;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) dl dt div:first-child h3 {
+  width: 70px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: -1.5px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) dl dt div:last-child button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) dl dt div:last-child button img {
+  width: 30px;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) dl dd {
+  padding: 20px 0;
+}
+#cart .container .gap .content .left > ul > li:nth-child(2) dl dd ul {
+  display: flex;
+}
+#cart .container .gap .content .right {
+  width: 310px;
+  padding: 0 0 0 26px;
+}
