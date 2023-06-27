@@ -1,0 +1,38 @@
+
+1. bbs 테이블 -user 데이터베이스
+create table bbs (
+    bbsId  int NOT NULL,
+    userId    VARCHAR(16) NOT NULL,
+    subject  VARCHAR(30) NOT NULL,
+    content VARCHAR(4096) NOT NULL,
+    writeDate DATETIME,
+    deleteOk int,
+    PRIMARY KEY(bbsId)
+);
+
+2. BbsDTO 만들기
+create table bbs (
+    bbsId  
+    userId   
+    subject  
+    content 
+    writeDate
+    deleteOk 
+
+3. BbsDAO 만들기
+글쓰기 메서드
+
+계산입력   화면입력   화면입력   화면입력      시스템날짜                기본값 1
+  글번호      작성자      제목         내용    작성일(현재시간)   삭제여부기본값입력 1 (삭제된것 0 변경)
+ insert into bbs() values(1,"dksgh","dgl","sadgjalg",now(),1);
+
+
+// 로그인 성공 시 세션(session)의 속성(Attribute)을 설정(setter)하기
+// session.setAttribute("키(아이디)", "키값(아이디)")
+   session.setAttribute("userId",UserDTO.getUserId());
+
+// 세션 값 가져오기
+  String userId=null;
+  if((String)session.getAttribute("userId")!=null){
+        userId = (String)session.getAttribute("userId");
+   }
