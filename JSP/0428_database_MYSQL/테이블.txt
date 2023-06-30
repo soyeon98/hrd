@@ -1,0 +1,85 @@
+테이블
+
+ALTER
+
+필드 = 열(칸) = 속성(프로퍼티) = 항목(Item)
+수정 추가 삭제
+
+
+///USER 데이터베이스 내에 테이블 만들기
+
+    USE user;
+
+    CREATE TABLE member(
+        idx         int not null    AUTO_INCREMENT  primary key,
+        user_id     VARCHAR(16) NOT null,
+        user_PW     VARCHAR(16) NOT null,
+        user_name   VARCHAR(50) NOT null,
+        user_hp     VARCHAR(13) NOT null
+    ) ENGINE=InnoDB CHARSET=utf8mb4;
+
+///생성된 테이블 확인하기
+
+mysql> show tables;
++----------------+
+| Tables_in_user |
++----------------+
+| member         |
+| todo_list      |
++----------------+
+2 rows in set (0.00 sec)
+
+///테이블 속성 확인하기
+
+mysql> desc member;
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| idx       | int         | NO   | PRI | NULL    | auto_increment |
+| user_id   | varchar(16) | NO   |     | NULL    |                |
+| user_PW   | varchar(16) | NO   |     | NULL    |                |
+| user_name | varchar(50) | NO   |     | NULL    |                |
+| user_hp   | varchar(13) | NO   |     | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+
+5 rows in set (0.01 sec)
+
+///이메일 열(Column) 추가하기
+
+ALTER TABLE
+추가 속성
+    필드       타입
+user_mail  VARCHAR(250)
+
+ALTER TABLE 테이블명 ADD COLUMN 필드명 타입 NOT NULL;
+ALTER TABLE 테이블명 ADD COLUMN 필드명 타입 NULL;
+
+// 이메일 필드 추가하기
+    ALTER TABLE member ADD COLUMN user_mail VARCHAR(250) NOT NULL;
+
+mysql> desc member;
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| idx       | int          | NO   | PRI | NULL    | auto_increment |
+| user_id   | varchar(16)  | NO   |     | NULL    |                |
+| user_PW   | varchar(16)  | NO   |     | NULL    |                |
+| user_name | varchar(50)  | NO   |     | NULL    |                |
+| user_hp   | varchar(13)  | NO   |     | NULL    |                |
+| user_mail | varchar(250) | NO   |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+
+user_mail 필드명을 user_email로 변경하기(CHANGE)
+    ALTER TABLE member  CHANGE COLUMN 원래 필드명 바꿀 필드명  타입 NOT NULL;
+    ALTER TABLE member  CHANGE COLUMN user_mail user_email  VARCHAR(250) NOT NULL;
+
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| idx        | int          | NO   | PRI | NULL    | auto_increment |
+| user_id    | varchar(16)  | NO   |     | NULL    |                |
+| user_PW    | varchar(16)  | NO   |     | NULL    |                |
+| user_name  | varchar(50)  | NO   |     | NULL    |                |
+| user_hp    | varchar(13)  | NO   |     | NULL    |                |
+| user_email | varchar(250) | NO   |     | NULL    |                |

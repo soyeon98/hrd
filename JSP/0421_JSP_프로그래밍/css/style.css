@@ -1,0 +1,17 @@
+*{margin: 0;padding: 0;box-sizing: border-box;vertical-align: middle;}
+#wrap{width: 100%;}
+#wrap .top{width: 600px; margin: 0 auto;text-align: end; padding: 100px 80px 10px 0;}
+#wrap .top a{text-decoration: none; color: #aaa;transition: all 0.3s;}
+#wrap .top a:hover{ color: #333;}
+#wrap form{width: 500px; margin: 0 auto; padding: 0 50px;}
+#wrap form table{width: 100%;}
+#wrap form table caption{font-size: 28px; font-weight: 500; padding: 0 0 20px 0;}
+#wrap form table td{padding: 5px 0;}
+#wrap form table td:nth-child(1){width: 100px; font-size: 15px; color: #333; font-weight: 600;}
+#wrap form table td:nth-child(2){width: 300px;}
+#wrap form table td label{width: 100%;}
+#wrap form table td label >input{ margin: 0 5px 0 70px;}
+#wrap form table td >input{width: 100%; height: 35px; padding: 0 15px;}
+#wrap form table td >input.memo{ height: 80px;}
+#wrap form table td label select{width: 100%;height: 30px; padding: 0 15px;}
+#wrap form button{ width: 100%; height: 40px; background: #fff; margin: 10px 0 0 0; cursor: pointer;border-radius:3px ; border: 1px solid #333; font-size: 14px; font-weight: 600; outline: 0;}

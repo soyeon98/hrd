@@ -1,0 +1,25 @@
+톰캣 웹서버
+
+http://localhost:8080/0404_%EC%9E%90%EB%B0%94_JSP_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%9E%90%EB%B0%94_JSP_01.jsp
+
+
+
+    <!-- 스크립트릿 : 자바 코드 변수 지정 사용 <% %> -->
+    <%
+        String strName = "풀 스텍 박소연";
+    %>
+
+    <h1>JSP 자바 서버페이지</h1>
+    <!-- 스크립트 표현식 값 출력 <%= %> -->
+    <h2>웹 개발자 <strong><%=strName%></strong>입니다.</h2>
+
+    <!-- 서브페이지1 가져오기 -->
+    <!-- 인클루드 디렉티브 -->
+    <jsp:include page="./서브페이지1.jsp" flush="false"/>
+
+
+    액션태그 인클루드   
+    <jsp:include page="./서브페이지1.jsp" flush="false"/>
+
+    디렉티브 인클루드
+    <%@ include file="./서브페이지2.jsp" %>

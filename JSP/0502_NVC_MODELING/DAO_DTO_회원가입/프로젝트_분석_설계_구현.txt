@@ -1,0 +1,114 @@
+데이터베이스 아이디 : root
+데이터베이스 비밀번호 : 1234
+
+user 데이터베이스에 테이블 만들기
+
+회원가입 테이블 이름 : member_table
+
+ 1. 테이블 만들기
+CREATE TABLE member_table(
+    user_id       VARCHAR(16)     NOT NULL    PRIMARY KEY,
+    user_pw       VARCHAR(16)     NOT NULL,
+    user_name     VARCHAR(30)     NOT NULL,
+    user_hp       VARCHAR(13)     NOT NULL,
+    user_email    VARCHAR(250)    NOT NULL  
+);
+
+
+DTO
+//////////////////////////
+ 2. MemberDTO.java
+/////////////////////////
+
+DAO
+//////////////////////////
+ 3. MemberDAO.java
+
+ 데이터베이스 URL : 'jdbc:데이터베이스종류://localhost:포트번호/데이터베이스이름'
+ 데이터베이스 URL : 'jdbc:mysql://localhost:3306/user'
+ 데이터베이스 이름 : user
+ 데이터베이스 테이블이름 : member_table
+ 데이터베이스 아이디 : root
+ 데이터베이스 비밀번호 : 1234
+
+ // jdbc 드라이버 설정
+ Class.forName('com.mysql.jdbc.Driver');
+
+// Connection 데이터베이스 컨넥션(DBURL, DB 아이디, DB 비밀번호)
+    private Connection conn;
+
+    String DBURL ='jdbc:mysql://localhost:3306/user';
+    String DBID='root';
+    String DBPW='1234';
+
+    conn = DriverManager.getConnection(DBURL,DBID,DBPW);
+
+package member;
+import java.sql.*;
+
+public class MemberDAO {
+
+    // 메인 생성자
+    // JDBC 드라이버
+    // 컨넥션
+    private Connection conn=null;
+    
+    public MemberDAO(){
+      
+        try{         
+            String DBURL ="jdbc:mysql://localhost:3306/user";
+            String DBID="root";
+            String DBPW="1234";
+            Class.forName("com.mysql.jdbc.Driver");
+            System.out.println("JDBC 드라이버 연결 성공!");
+            conn = DriverManager.getConnection(DBURL,DBID,DBPW);
+            System.out.println("데이터베이스 연결 성공!");
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
+    }
+    // 입력(가입) 메서드 : 회원가입
+     public int insert(MemberDTO memberDTO){
+
+    // 로그인 메서드
+    // 로그아웃 메서드
+    // 수정 메서드
+    // 삭제 메서드
+    // 출력 메서드
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+    JSP
+     4. 입력화면 디자인
+     member_insert.jsp
+
+    JSP(DAO & DTO 연동) => useBean 설정 setter 함수 구현 
+     5. 입력화면 데이터 받아서 설정하는 DAO & DTO 연결
+
+        
+     member_insert_action.jsp 액션파일
+
+     <%@ page import = "member.MemberDAO"; %>
+     <%@ page import = "java.io.printWriter"; %>
+
+
+    JSP : UPDATE
+     6.수정하기 구현하기
+
+         public int update(MemberDTO memberDTO){
+        String SQL ="UPDATE member_table SET user_pw= ? WHERE user_id = ?";
+        try{
+            ps= conn.prepareStatement(SQL);
+            ps.setString(1, memberDTO.getUser_pw());
+            ps.setString(1, memberDTO.getUser_id());
+            return ps.executeUpdate();
+
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return -1;
+    }

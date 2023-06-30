@@ -1,0 +1,11 @@
+create table todo(
+    idx     int     NOT NULL    PRIMARY KEY AUTO_INCREMENT,
+    list    VARCHAR(250)    NOT NULL,
+    date timestamp DEFAULT  CURRENT_TIMESTAMP     
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+insert into todo(list, date)
+VALUES
+("일찍 자기", now()),
+("맛있는 거 먹기", now()),
+("옷 사기", now());

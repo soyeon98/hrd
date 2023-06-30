@@ -1,0 +1,10 @@
+*{margin: 0;padding: 0;box-sizing: border-box;vertical-align: middle;}
+#wrap{width: 100%;}
+#wrap .top{width: 1700px; margin: 0 auto;text-align: end; padding: 120px 50px 10px 0;}
+#wrap .top a{text-decoration: none; color: #aaa;transition: all 0.3s;}
+#wrap .top a:hover{ color: #333;}
+#wrap table{width: 1700px; margin: 0 auto; border-collapse: collapse;}
+#wrap table caption{font-size: 32px; color: #3a3a4a; font-weight: 700; padding: 0 0 30px 0;}
+#wrap table tr,th,td{border: 1px solid #aaa;}
+#wrap table thead tr th{height: 50px; background: #fff2f2;}
+#wrap table tbody tr td{height: 40px; text-align: center;}

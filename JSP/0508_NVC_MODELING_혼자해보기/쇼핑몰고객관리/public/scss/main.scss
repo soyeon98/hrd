@@ -1,0 +1,56 @@
+
+#wrap {
+    width: 100%;
+    
+    #signup.main{
+        width: 100%;
+        padding: 100px 0;
+        height: 100vh;
+        background: #444;
+        .container{
+            width: 100%;
+            max-width: 700px ;         
+            margin: 0 auto;
+            background: #fff;
+
+            .title{
+                width: 100%;
+                text-align: center;
+                padding: 100px 0 30px 0;
+                h2{
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: rgb(218, 158, 80);
+                }
+            }
+            .content{
+                width: 100%;
+                padding: 0 150px 180px 150px;
+                h2{
+                    text-align: center;
+                    padding: 15px 0;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #000;
+                }
+                h3{
+                    text-align: right;
+                    margin: 0 0 15px 0;
+                    padding: 0 40px 10px 40px;
+                    color: rgb(218, 158, 80);
+                    border-bottom: 1px solid rgb(218, 158, 80);
+                }
+                ul{
+                    li{
+                        text-align: center;
+                        padding: 5px 0;
+                        a{
+                            font-size: 16px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
