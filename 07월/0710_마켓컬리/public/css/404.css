@@ -23,3 +23,8 @@
   font-weight: 700;
   color: #fff;
 }
+
+#write .container form{width: 100%;}
+#write .container form ul{width: 100%;}
+#write .container form ul li{width: 100%;padding: 10px 0;}
+#write .container form ul li input{width: 100%;padding: 0 15px;height: 50px;border: 1px solid #ddd; background: #fff;font-size: 16px;}
