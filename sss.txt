@@ -1,0 +1,9 @@
+(?<=<span[^>]*>)(.*?)(?=<\/span>)
+
+SELECT  *  FROM 
+(SELECT bbsId, userId,deleteOk,hit, @no:=@no+1 as no FROM bbs,(SELECT @no:=0) as v_format_no WHERE deleteOk=1 ) as v_table
+WHERE no<=13 ORDER BY bbsId DESC LIMIT 13;
+
+select * from (select *, @no:=)
+
+SELECT  *  FROM (SELECT *, @no:=@no+1 as no FROM bbs,(SELECT @no:=0) as v_format_no WHERE deleteOk=1 ) as v_tableWHERE no<=? ORDER BY bbsId DESC LIMIT 5;
